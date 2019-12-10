@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: parasnath.com.np
+Token: ab8130fb7a9a647808c156df3d5f8ce5360a1e7387c000ff497423928285137e
