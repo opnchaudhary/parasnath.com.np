@@ -158,16 +158,21 @@ svg{
 }
 #promo{
     height: auto;
-    width: 144px;
+    width: 114px;
     float: right;
     position: relative;
-    top: 10px;
+    top: 150px;
     right: 10px;
     background: white;
     border-radius: 12px;
     padding: 8px;
 }
-        
+#cta a{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-left: 12px;
+}
+
 @media only screen and (max-width: 600px) {
   nav {
     display: none;
@@ -188,10 +193,14 @@ svg{
     background: white;
     border-radius: 12px;
     padding: 8px;
-    }
-}
-#cta a{
+  }
+  #cta {
+      display: flex;
+      flex-direction: column;
+  }
+  #cta a{
     padding-top: 12px;
     padding-bottom: 12px;
-    margin-left: 12px;
+    margin-left: 0px !important;    
+  }
 }
