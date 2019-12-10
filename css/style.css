@@ -123,13 +123,27 @@ nav ul li a{
 section ul li div{
     padding: 0px;
 }
-#experiences, #awards-and-certifications, #education, #publications{
+#experiences, #awards-and-certifications, #education, #skills, #publications{
     width: 100%;
 }
 #awards-and-certifications h3{
     padding: 0px 32px;
     margin-top: 20px;
     margin-bottom: -16px;
+}
+#techstack{
+    width: 75%;
+    margin:auto;
+    text-align: center;
+}
+#techstack li{
+    display:inline-block;
+    margin: 1rem;
+    color: white;
+}
+#techstack li img{
+    height: 3rem;
+    width: auto;
 }
 
 /* Social Links*/
