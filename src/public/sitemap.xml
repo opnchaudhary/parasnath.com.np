@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc>http://parasnath.com.np/</loc>
-		<lastmod>2019-10-05</lastmod>
+		<loc>https://parasnath.com.np/</loc>
+		<lastmod>2020-01-02</lastmod>
 		<changefreq>weekly</changefreq>
+		<priority>0.8</priority>
+	</url>
+	<url>
+		<loc>https://parasnath.com.np/blog/</loc>
+		<lastmod>2020-01-02</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.9</priority>
+	</url>
+	<url>
+		<loc>https://parasnath.com.np/search/</loc>
+		<lastmod>2020-01-02</lastmod>
+		<changefreq>monthly</changefreq>
 		<priority>0.8</priority>
 	</url>
 </urlset>
