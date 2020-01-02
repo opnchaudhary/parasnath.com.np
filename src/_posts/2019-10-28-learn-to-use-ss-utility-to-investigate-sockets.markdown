@@ -3,7 +3,7 @@ layout: post
 title:  "Learn to use ss — utility to investigate sockets"
 author: Paras Nath
 date:   2019-10-27 18:51:02 +0545
-categories: jekyll update
+categories: [Linux, Terminal]
 tags: [Linux, Terminal, ss]
 ---
 In this post, I will be discussing about a utility you will often use. The utility is ‘ss’. According to the man page of ss:

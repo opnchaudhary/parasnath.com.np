@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Schedule your tasks with 'at' utitlity – Paras Nath – sharing ideas</title>
+    <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Schedule your tasks with ‘at’ utitlity | Paras Nath</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Schedule your tasks with ‘at’ utitlity" />
+<meta name="author" content="Paras Nath" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="In this post, I am going to share you about a utility in Linux for scheduling your scripts. I will be showing how you can use a very simple and easy utility called ‘at’. First of all, if its not already install you can install it by running: $ sudo yum install at -y Now that at is installed. You can start the atd daemon: $ sudo yum start atd" />
+<meta property="og:description" content="In this post, I am going to share you about a utility in Linux for scheduling your scripts. I will be showing how you can use a very simple and easy utility called ‘at’. First of all, if its not already install you can install it by running: $ sudo yum install at -y Now that at is installed. You can start the atd daemon: $ sudo yum start atd" />
+<link rel="canonical" href="https://parasnath.com.np/blog/blog/schedule-your-tasks-with-at-utility/" />
+<meta property="og:url" content="https://parasnath.com.np/blog/blog/schedule-your-tasks-with-at-utility/" />
+<meta property="og:site_name" content="Paras Nath" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-10-27T18:51:02+05:45" />
+<script type="application/ld+json">
+{"headline":"Schedule your tasks with ‘at’ utitlity","dateModified":"2019-10-27T18:51:02+05:45","datePublished":"2019-10-27T18:51:02+05:45","author":{"@type":"Person","name":"Paras Nath"},"description":"In this post, I am going to share you about a utility in Linux for scheduling your scripts. I will be showing how you can use a very simple and easy utility called ‘at’. First of all, if its not already install you can install it by running: $ sudo yum install at -y Now that at is installed. You can start the atd daemon: $ sudo yum start atd","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://parasnath.com.np/blog/blog/schedule-your-tasks-with-at-utility/"},"url":"https://parasnath.com.np/blog/blog/schedule-your-tasks-with-at-utility/","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="In this post, I am going to share you about a utility in Linux for scheduling your scripts. I will be showing how you can use a very simple and easy utility called ‘at’. First of all, if its not already install you can install it by running:
+$ sudo yum install at -y
+
+Now that at is installed. You can start the atd daemon:
+$ sudo yum start atd
+
+" />
+    <meta property="og:description" content="In this post, I am going to share you about a utility in Linux for scheduling your scripts. I will be showing how you can use a very simple and easy utility called ‘at’. First of all, if its not already install you can install it by running:
+$ sudo yum install at -y
+
+Now that at is installed. You can start the atd daemon:
+$ sudo yum start atd
+
+" />
+    
+    <meta name="author" content="Paras Nath" />
+
+    
+    <meta property="og:title" content="Schedule your tasks with 'at' utitlity" />
+    <meta property="twitter:title" content="Schedule your tasks with 'at' utitlity" />
+    
+
+    
+    <meta property="og:image" content="https://parasnath.com.np/blog/images/reverie.png"/>
+    <meta property="twitter:image" content="https://parasnath.com.np/blog/images/reverie.png"/>
+    
+    <meta property="og:site_name" content="Amit Merchant - Software Engineer"/>
+
+
+    <link rel="stylesheet" type="text/css" href="/blog/assets/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Paras Nath - sharing ideas" href="/blog/feed.xml" />
+    <link rel="canonical" href="https://parasnath.com.np/blog/schedule-your-tasks-with-at-utility/" />
+
+    <meta name="theme-color" content="#000000">
+    <link rel="icon" type="image/png" sizes="32x32" href="/blog/images/favicon-32x32.png">
+  </head>
+
+  <body>
+    <div id="bar"></div>
+    <div class="wrapper-container">
+      <div class="wrapper-masthead">
+        <div class="container">
+          <header class="masthead clearfix">
+            <a href="/blog" class="site-avatar"><img src="/images/paras.jpg" /></a>
+
+            <div class="site-info">
+              <h1 class="site-name"><a href="/blog">Paras Nath</a></h1>
+              <p class="site-description">sharing ideas</p> 
+            </div>
+
+            <nav>
+              <a href="/blog/">Home</a>              
+              <!-- <a href="/blog/getting-started">Getting Started</a> -->
+              <a href="/blog/search">Search</a>
+              <a href="/">About</a>
+            </nav>
+          </header>
+        </div>
+      </div>
+
+      <div class="wrapper-main">
+        <div id="main" role="main" class="container">
+          <article class="post detailed">
+  <h1>Schedule your tasks with 'at' utitlity</h1>
+
+  <div>
+    <p class="author_title">Paras Nath Chaudhary  ·  October 27, 2019</p>
+    
+    <div class="post-tags">
+      
+      
+        <a href="/blog/categories/#Linux">Linux</a>
+        
+      
+    </div>
+  </div>
+    
+  <div class="entry">
+    <p>In this post, I am going to share you about a utility in Linux for scheduling your scripts. I will be showing how you can use a very simple and easy utility called ‘at’. First of all, if its not already install you can install it by running:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>yum <span class="nb">install </span>at <span class="nt">-y</span>
+</code></pre></div></div>
+<p>Now that at is installed. You can start the atd daemon:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>yum start atd
+</code></pre></div></div>
+<!--more-->
+<p>We are all set we can now schedule tasks. For our case we will use an example script ‘example.sh’ which will broadcast a message to the wall:
+echo “Script is running” | wall
+We will schedule the script to run now:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>at <span class="nt">-f</span> example.sh now
+</code></pre></div></div>
+<p>We can run at a specific time as:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>at <span class="nt">-f</span> example.sh 10:30
+</code></pre></div></div>
+<p>We can view the scheduled tasks by running atq command:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>atq
+</code></pre></div></div>
+
+<p>To remove a task from the at queue, you can run ‘at -d task_number’. For example to remove task with id 4 we would run :</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>at <span class="nt">-d</span> 4
+</code></pre></div></div>
+<p>By default the queue name of tasks added with ‘at’ command is a. You can set a new queue name with -q option. For example</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>at <span class="nt">-q</span> c <span class="nt">-f</span> example.sh 12:12
+</code></pre></div></div>
+<p>Allowed names for queue are a-z and A-Z.
+In the upcoming posts, I will be writing about scheduling with ‘cron’. So stay tuned. 🙂</p>
+
+  </div>
+
+  <div>
+    <p><span class="share-box">Share:</span> <a href="http://twitter.com/share?text=Schedule your tasks with 'at' utitlity&url=https://parasnath.com.np/blog/schedule-your-tasks-with-at-utility/" target="_blank">Twitter</a>, <a href="https://www.facebook.com/sharer.php?u=https://parasnath.com.np/blog/schedule-your-tasks-with-at-utility/" target="_blank">Facebook</a></p>
+  </div>
+
+  <!--<div class="date">
+    Written on October 27, 2019
+  </div>-->
+
+  
+</article>
+
+        </div>
+      </div>
+
+      <div class="wrapper-footer">
+        <div class="container">
+          <footer class="footer">
+            
+<a href="mailto:hello@parasnath.com.np"><i class="svg-icon email"></i></a>
+
+
+<a href="https://github.com/opnchaudhary"><i class="svg-icon github"></i></a>
+
+
+
+<a href="/blog/feed.xml"><i class="svg-icon rss"></i></a>
+<a href="https://www.twitter.com/opnchaudhary"><i class="svg-icon twitter"></i></a>
+
+
+
+
+
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-128290193-1', 'auto');
+		ga('send', 'pageview', {
+		  'page': '/blog/schedule-your-tasks-with-at-utility/',
+		  'title': 'Schedule your tasks with \'at\' utitlity'
+		});
+	</script>
+	<!-- End Google Analytics -->
+
+
+  </body>
+</html>

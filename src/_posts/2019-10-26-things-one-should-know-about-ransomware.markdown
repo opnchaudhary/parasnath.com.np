@@ -8,7 +8,7 @@ tags: [Ransomware, Malware, Virus, Security]
 ---
 ![about ransomware](/blog/assets/img/about-ransomware.jpeg)  
 Ransomware is a type of malicious software designed to deny access to a computer system or data until a ransom is paid. They are usually spread through phishing emails, infected websites and malvertising (malicious advertising). One must not forget that though they ransom notice says file will be recovered after the ransom is paid, but it is not guaranteed. The first ransomware appeared
-
+<!--more-->
 ## Types of Ransomware:
 - Scareware  
 Scareware are the simplest type of ransomware. They are the delusive. They show pop up message telling that malware was detected and asks for ransomware to delete it. If you don’t pay, it keeps on bombarding the message. However these ransomware do no damage to your data. The worst it can go is stop you from running any other program because of the continuous pop ups.
