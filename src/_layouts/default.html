@@ -51,5 +51,9 @@
     </div>
 
     {% include analytics.html %}
+    <script>
+      var fixedUrl = $('link[rel="canonical"]').href.replace('/blog/blog/','/blog/');
+      $('link[rel="canonical"]').attr('href', fixedUrl);
+    </script>
   </body>
 </html>
