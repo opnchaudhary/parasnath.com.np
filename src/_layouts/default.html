@@ -50,9 +50,15 @@
       </div>
     </div>
 
-    {% include analytics.html %}
+    {% include analytics.html %}    
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
-      const canonical = document.querySelector('link[rel="canonical"]');
+    WebFont.load({
+        google: {
+        families: ['Roboto']
+        }
+    });
+    const canonical = document.querySelector('link[rel="canonical"]');
       if (canonical !== null) {
         canonical.href = canonical.href.replace('/blog/blog/','/blog/');
       }
