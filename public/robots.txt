@@ -1,0 +1,8 @@
+User-Agent: *
+Disallow: /readme.md
+Sitemap: http://parasnath.com.np/sitemap.xml
+
+User-Agent: Googlebot
+Allow: /*.js*
+Allow: /*.css*
+Allow: /*.jpg*
