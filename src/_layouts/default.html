@@ -52,8 +52,10 @@
 
     {% include analytics.html %}
     <script>
-      var fixedUrl = $('link[rel="canonical"]').href.replace('/blog/blog/','/blog/');
-      $('link[rel="canonical"]').attr('href', fixedUrl);
+      const canonical = document.querySelector('link[rel="canonical"]');
+      if (canonical !== null) {
+        canonical.href = canonical.href.replace('/blog/blog/','/blog/');
+      }
     </script>
   </body>
 </html>
