@@ -2,4 +2,4 @@
 .well-known
 .travis.yml
 .sonar-project.properties
-blog/
+public/blog/
