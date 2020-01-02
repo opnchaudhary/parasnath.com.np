@@ -181,9 +181,6 @@ svg{
     border-radius: 12px;
     padding: 8px;
 }
-#cta {
-    font-size: 15pt;
-}
 #cta a{
     margin-top: 12px;
     margin-left: 8px;
@@ -213,7 +210,6 @@ svg{
   #cta {
       display: flex;
       flex-direction: column;
-      font-size: 14pt;
   }
   #cta a{
     margin-top: 8px;
