@@ -1,0 +1,28 @@
+{
+  "version": "1.0.0",
+  "name": "Paras Nath Chaudhary",
+  "launch_path": "/",
+  "description": "Paras Nath Chaudhary is a result-oriented Mobile/Web Developer with over 6 years of experience delivering value-driven solutions.",
+  'theme_color':'#0069c0',
+  'background_color':'#ffffff',
+  'start_url':'/index.html',
+  "icons": {
+    "128": "/images/touch/icon-128x128.png"    
+  },
+  "developer": {
+    "name": "Paras Nath Chaudhary",
+    "url": "https://parasnath.com.np"
+  },
+  "installs_allowed_from": [
+    "*"
+  ],
+  "default_locale": "en",
+  "permissions": {
+  },
+  "locales": {
+    "en": {
+      "name": "Paras Nath Chaudhary",
+      "description": "Paras Nath Chaudhary is a result-oriented Mobile/Web Developer with over 6 years of experience delivering value-driven solutions."
+    }
+  }
+}

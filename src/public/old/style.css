@@ -1,0 +1,69 @@
+/*royalblue = #548bd6
+darkslateblue=#2f5790
+darkolivegreen=#432d29
+lightslategrey=#859097
+midnightblue=#20355e*/
+.navbar{
+    background-color:transparent;
+    border-bottom: 0.5px solid #CECECD;
+}
+nav .navbar-item {
+    text-transform: capitalize;
+}
+.svg, .svg svg{
+    width:1.25rem;
+    height:1.25rem;
+}
+
+header #home{
+    background-color: #548bd6;
+    /*background: url("images/header.jpg");*/
+}
+
+
+#home .hero-body .container h1.title, #home .hero-body .container h2.subtitle{
+    color: white;
+}
+#home .hero-body .container h2.is-2{
+    color: #56f0f4;
+}
+#home .hero-body .container a{
+    background:transparent;
+    color: white;
+}
+#home .hero-body .container a:hover{
+    background:white;
+    color: #548bd6;
+}
+
+#portfolio{
+    background-color: #548bd6;
+}
+#portfolio h1.is-2{
+    color:white;
+}
+
+
+#services{
+    background-color: #20355e;
+}
+#services h1{
+    color: white;
+}
+#skills{
+    width: 75%;
+    margin:auto;
+}
+#skills li{
+    display:inline-block;
+    margin: 1rem;
+    color: white;
+}
+#skills li img{
+    height: 3rem;
+    width: auto;
+}
+canvas{
+  position: absolute;
+  top: 0;
+}
