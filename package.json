@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "Homepage of Paras Nath.",
   "scripts": {
-  	"start": "http-server ./src/public",
+    "start": "http-server ./src/public",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Paras Nath Chaudhary",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {}
 }

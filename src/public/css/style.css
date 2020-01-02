@@ -24,7 +24,6 @@ nav{
     width:160px;
     position: fixed;
     background: #0069c0;
-    padding-top: 40px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -80,7 +79,7 @@ section h2{
 section:nth-child(odd){
     background-color: #2196F3;    
 }
-section:nth-child(odd) p, section:nth-child(odd) h2, section:nth-child(odd) h3, section:nth-child(even) h4, section-nth:child(odd) ul li{
+section:nth-child(odd) p, section:nth-child(odd) h2, section:nth-child(odd) h3, section:nth-child(even) h4, section:nth-child(odd) ul li{
     color: white;
 }
 section:nth-child(odd) h2{
