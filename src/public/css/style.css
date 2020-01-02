@@ -210,6 +210,7 @@ svg{
   #cta {
       display: flex;
       flex-direction: column;
+      font-size: 14pt;
   }
   #cta a{
     margin-top: 8px;
