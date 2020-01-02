@@ -1,0 +1,8 @@
+### Project specific config ###
+language: generic
+branches:
+    only:
+      - master
+sudo: false
+dist: trusty
+
