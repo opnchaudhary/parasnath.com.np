@@ -1,0 +1,19 @@
+I"�<p>JDK7 has been deprecated however, there are still softwares that depend on it. I came across similar issue today and therefor I had to install jdk7. I will show what you need to do if you want to do the same. Frist download archive file of jdk from https://www.oracle.com/technetwork/java/javase/downloads/java-archive-downloads-javase7-521261.html. In my case I am going to download jdk-7u80-linux-x64.tar.gz. Now extract the file with the following command:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">tar </span>xvzf jdk-7u80-linux-x64.tar.gz
+</code></pre></div></div>
+<p>Move the extracted directrory to /usr/lib/jvm</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo mv </span>jdk1.7.0_80 /usr/lib/jvm
+</code></pre></div></div>
+
+<p>To make the installed java available for update-alternatives run the following command</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>update-alternatives — <span class="nb">install</span> “/usr/bin/java” “java” “/opt/jdk/jdk1.7.0_80/bin/java” 1
+<span class="nv">$sudo</span> update-alternatives — <span class="nb">install</span> “/usr/bin/javac” “javac” “/opt/jdk/jdk1.7.0_80/bin/javac” 1
+<span class="nv">$ </span><span class="nb">sudo </span>update-alternatives — <span class="nb">install</span> “/usr/bin/javaws” “javaws” “/opt/jdk/jdk1.7.0_80/bin/javaws” 1
+</code></pre></div></div>
+<p>Now that update-alternatives is aware of the newly installed java, you can change it with following command and select the desired version of java</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>update-alternatives <span class="nt">--config</span> java
+</code></pre></div></div>
+<p>You can verify with</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>javac <span class="nt">-version</span>
+</code></pre></div></div>
+:ET

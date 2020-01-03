@@ -1,0 +1,84 @@
+I"$"<p>Today, in this post, I am going to share how you can share the content of your app using share plugin. It’s pretty easy to get this work. First of all create a flutter project then in your pubspec.yaml file add the following line in dependencies:</p>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">share</span><span class="pi">:</span> <span class="s">^0.6.2+3</span>
+</code></pre></div></div>
+<p>Then run,</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>flutter packages get
+</code></pre></div></div>
+<p>Now let’s create a button on click of which we will share the content we want to share. To share a plain text, we would simply import the library by placing
+<!--more--></p>
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="s">'package:share/share.dart'</span><span class="o">;</span>
+</code></pre></div></div>
+<p>at the top of the file and then using the following code in the body section:</p>
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">RaisedButton</span><span class="o">(</span>
+  <span class="nl">child:</span> <span class="n">Text</span><span class="o">(</span><span class="s">"Share"</span><span class="o">),</span>
+  <span class="nl">onPressed:</span> <span class="o">(){</span>
+    <span class="n">Share</span><span class="o">.</span><span class="na">share</span><span class="o">(</span><span class="s">"Awesome stuff to share"</span><span class="o">);</span>
+  <span class="o">},</span>
+<span class="o">)</span>
+</code></pre></div></div>
+<p>We also might want to add subject while sharing in such a case we use:</p>
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">RaisedButton</span><span class="o">(</span>
+  <span class="nl">child:</span> <span class="n">Text</span><span class="o">(</span><span class="s">"Share"</span><span class="o">),</span>
+  <span class="nl">onPressed:</span> <span class="o">(){</span>
+    <span class="kd">final</span> <span class="n">RenderBox</span> <span class="n">box</span> <span class="o">=</span> <span class="n">context</span><span class="o">.</span><span class="na">findRenderObject</span><span class="o">();</span>
+    <span class="n">Share</span><span class="o">.</span><span class="na">share</span><span class="o">(</span><span class="s">"Main message is this"</span><span class="o">,</span>
+        <span class="nl">subject:</span><span class="s">"this is the subject"</span><span class="o">,</span>
+        <span class="nl">sharePositionOrigin:</span> <span class="n">box</span><span class="o">.</span><span class="na">localToGlobal</span><span class="o">(</span><span class="n">Offset</span><span class="o">.</span><span class="na">zero</span><span class="o">)</span> <span class="o">&amp;</span> <span class="n">box</span><span class="o">.</span><span class="na">size</span><span class="o">);</span>
+  <span class="o">},</span>
+<span class="o">)</span>
+</code></pre></div></div>
+<p>A full example is as follows:</p>
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="s">'package:flutter/material.dart'</span><span class="o">;</span>
+<span class="kn">import</span> <span class="s">'package:share/share.dart'</span><span class="o">;</span>
+
+<span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="o">)</span> <span class="o">=&gt;</span> <span class="n">runApp</span><span class="o">(</span><span class="n">MyApp</span><span class="o">());</span>
+
+<span class="kd">class</span> <span class="nc">MyApp</span> <span class="kd">extends</span> <span class="n">StatelessWidget</span> <span class="o">{</span>
+  <span class="nd">@override</span>
+  <span class="n">Widget</span> <span class="n">build</span><span class="o">(</span><span class="n">BuildContext</span> <span class="n">context</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">return</span> <span class="n">MaterialApp</span><span class="o">(</span>
+      <span class="nl">title:</span> <span class="s">'Flutter Demo'</span><span class="o">,</span>
+      <span class="nl">debugShowCheckedModeBanner:</span> <span class="kc">false</span><span class="o">,</span>
+      <span class="nl">theme:</span> <span class="n">ThemeData</span><span class="o">(</span>
+        <span class="nl">primarySwatch:</span> <span class="n">Colors</span><span class="o">.</span><span class="na">blue</span><span class="o">,</span>
+      <span class="o">),</span>
+      <span class="nl">home:</span> <span class="n">MyHomePage</span><span class="o">(</span><span class="nl">title:</span> <span class="s">'Flutter Demo Home Page'</span><span class="o">),</span>
+    <span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">MyHomePage</span> <span class="kd">extends</span> <span class="n">StatefulWidget</span> <span class="o">{</span>
+  <span class="n">MyHomePage</span><span class="o">({</span><span class="n">Key</span> <span class="n">key</span><span class="o">,</span> <span class="k">this</span><span class="o">.</span><span class="na">title</span><span class="o">})</span> <span class="o">:</span> <span class="k">super</span><span class="o">(</span><span class="nl">key:</span> <span class="n">key</span><span class="o">);</span>
+  <span class="kd">final</span> <span class="kt">String</span> <span class="n">title</span><span class="o">;</span>
+  <span class="nd">@override</span>
+  <span class="n">_MyHomePageState</span> <span class="n">createState</span><span class="o">()</span> <span class="o">=&gt;</span> <span class="n">_MyHomePageState</span><span class="o">();</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">_MyHomePageState</span> <span class="kd">extends</span> <span class="n">State</span><span class="o">&lt;</span><span class="n">MyHomePage</span><span class="o">&gt;</span> <span class="o">{</span>
+
+  <span class="nd">@override</span>
+  <span class="n">Widget</span> <span class="n">build</span><span class="o">(</span><span class="n">BuildContext</span> <span class="n">context</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">return</span> <span class="n">Scaffold</span><span class="o">(</span>
+      <span class="nl">appBar:</span> <span class="n">AppBar</span><span class="o">(</span>
+        <span class="nl">title:</span> <span class="n">Text</span><span class="o">(</span><span class="n">widget</span><span class="o">.</span><span class="na">title</span><span class="o">),</span>
+      <span class="o">),</span>
+      <span class="nl">body:</span> <span class="n">Column</span><span class="o">(</span>
+        <span class="nl">children:</span> <span class="o">&lt;</span><span class="n">Widget</span><span class="o">&gt;[</span>
+          <span class="n">RaisedButton</span><span class="o">(</span>
+            <span class="nl">child:</span> <span class="n">Text</span><span class="o">(</span><span class="s">"Share"</span><span class="o">),</span>
+            <span class="nl">onPressed:</span> <span class="o">(){</span>
+              <span class="kd">final</span> <span class="n">RenderBox</span> <span class="n">box</span> <span class="o">=</span> <span class="n">context</span><span class="o">.</span><span class="na">findRenderObject</span><span class="o">();</span>
+              <span class="n">Share</span><span class="o">.</span><span class="na">share</span><span class="o">(</span><span class="s">"Main message is this"</span><span class="o">,</span>
+                  <span class="nl">subject:</span><span class="s">"this is the subject"</span><span class="o">,</span>
+                  <span class="nl">sharePositionOrigin:</span> <span class="n">box</span><span class="o">.</span><span class="na">localToGlobal</span><span class="o">(</span><span class="n">Offset</span><span class="o">.</span><span class="na">zero</span><span class="o">)</span> <span class="o">&amp;</span> <span class="n">box</span><span class="o">.</span><span class="na">size</span><span class="o">);</span>
+            <span class="o">},</span>
+          <span class="o">)</span>
+        <span class="o">],</span>
+      <span class="o">)</span>
+    <span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+<p><img src="/blog/assets/img/share-content-through-flutter-app.png" alt="Share content through flutter app
+" /></p>
+:ET

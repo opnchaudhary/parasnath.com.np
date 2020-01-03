@@ -1,0 +1,297 @@
+I"�v<p><img src="/blog/assets/img/navigation-drawer-in-flutter.png" alt="Navigation Drawer in Flutter" />
+In this post, I am going to show how you can implement Navigation Drawer in your flutter project.
+To add a drawer, in your build function ad drawer as follows</p>
+
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">return</span> <span class="nf">Scaffold</span><span class="p">(</span>
+    <span class="nl">appBar:</span> <span class="n">AppBar</span><span class="o">(</span> <span class="nl">title:</span> <span class="n">Text</span><span class="o">(</span><span class="n">widget</span><span class="o">.</span><span class="na">title</span><span class="o">),</span> <span class="o">),</span>
+    <span class="nl">drawer:</span> <span class="n">Drawer</span><span class="o">(</span>
+        <span class="nl">child:</span> <span class="n">ListView</span><span class="o">(</span>
+            <span class="nl">children:</span> <span class="o">&lt;</span><span class="n">Widget</span><span class="o">&gt;[]</span>
+        <span class="o">),</span>
+    <span class="o">),</span>
+    <span class="nl">body:</span> <span class="n">Container</span><span class="o">(),</span>
+<span class="o">);</span>
+</code></pre></div></div>
+<!--more-->
+<p>The first item to the ListView is DrawerHeader.</p>
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">DrawerHeader</span><span class="o">(</span>
+  <span class="nl">child:</span> <span class="n">Text</span><span class="o">(</span><span class="s">"Header"</span><span class="o">,</span> <span class="nl">style:</span> <span class="n">TextStyle</span><span class="o">(</span><span class="nl">color:</span> <span class="n">Colors</span><span class="o">.</span><span class="na">white</span><span class="o">),),</span>
+  <span class="nl">decoration:</span> <span class="n">BoxDecoration</span><span class="o">(</span>
+    <span class="nl">color:</span> <span class="n">Colors</span><span class="o">.</span><span class="na">blue</span>
+  <span class="o">),</span>
+<span class="o">),</span>
+</code></pre></div></div>
+<p>This is very basic, let’s try to replace DrawerHeader with user details for that we</p>
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">use</span> <span class="nl">UserAccountsDrawerHeader:</span>
+<span class="n">UserAccountsDrawerHeader</span><span class="o">(</span>
+  <span class="nl">accountEmail:</span> <span class="n">Text</span><span class="o">(</span><span class="s">"john.doe@example.com"</span><span class="o">),</span>
+  <span class="nl">accountName:</span> <span class="n">Text</span><span class="o">(</span><span class="s">"John Doe"</span><span class="o">),</span>
+  <span class="nl">currentAccountPicture:</span> <span class="n">ClipRRect</span><span class="o">(</span>
+    <span class="nl">borderRadius:</span> <span class="n">BorderRadius</span><span class="o">.</span><span class="na">circular</span><span class="o">(</span><span class="mi">110</span><span class="o">),</span>
+    <span class="nl">child:</span> <span class="n">Image</span><span class="o">.</span><span class="na">asset</span><span class="o">(</span><span class="s">"images/user1.jpg"</span><span class="o">,</span> <span class="nl">fit:</span> <span class="n">BoxFit</span><span class="o">.</span><span class="na">cover</span><span class="o">,),</span>
+  <span class="o">),</span>
+  <span class="nl">otherAccountsPictures:</span> <span class="o">&lt;</span><span class="n">Widget</span><span class="o">&gt;[</span>
+    <span class="n">ClipRRect</span><span class="o">(</span>
+      <span class="nl">borderRadius:</span> <span class="n">BorderRadius</span><span class="o">.</span><span class="na">circular</span><span class="o">(</span><span class="mi">110</span><span class="o">),</span>
+      <span class="nl">child:</span> <span class="n">Image</span><span class="o">.</span><span class="na">asset</span><span class="o">(</span><span class="s">"images/user2.jpg"</span><span class="o">,</span> <span class="nl">fit:</span> <span class="n">BoxFit</span><span class="o">.</span><span class="na">cover</span><span class="o">,),</span>
+    <span class="o">),</span>
+    <span class="n">ClipRRect</span><span class="o">(</span>
+      <span class="nl">borderRadius:</span> <span class="n">BorderRadius</span><span class="o">.</span><span class="na">circular</span><span class="o">(</span><span class="mi">110</span><span class="o">),</span>
+      <span class="nl">child:</span> <span class="n">Image</span><span class="o">.</span><span class="na">asset</span><span class="o">(</span><span class="s">"images/user3.jpg"</span><span class="o">,</span> <span class="nl">fit:</span> <span class="n">BoxFit</span><span class="o">.</span><span class="na">cover</span><span class="o">,),</span>
+    <span class="o">)</span>
+  <span class="o">],</span>
+  <span class="nl">decoration:</span> <span class="n">BoxDecoration</span><span class="o">(</span>
+    <span class="nl">color:</span> <span class="n">Colors</span><span class="o">.</span><span class="na">blue</span>
+  <span class="o">),</span>
+<span class="o">),</span>
+</code></pre></div></div>
+<p>For the image assets to be located by the app, create a images directory and add the images. Then edit pubspec.yaml file so that the images can be located</p>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">assets</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">images/</span>
+</code></pre></div></div>
+<p>Let’s add some menu’s to the ListView, for example</p>
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">ListTile</span><span class="o">(</span>
+  <span class="nl">leading:</span> <span class="n">Icon</span><span class="o">(</span><span class="n">Icons</span><span class="o">.</span><span class="na">assessment</span><span class="o">),</span>
+  <span class="nl">title:</span> <span class="n">Text</span><span class="o">(</span><span class="s">"Assessment"</span><span class="o">),</span>
+  <span class="nl">onTap:</span> <span class="o">(){</span>
+    <span class="c1">// change the content</span>
+    <span class="c1">//do the operation here...</span>
+    <span class="c1">//close the drawer</span>
+    <span class="n">Navigator</span><span class="o">.</span><span class="na">pop</span><span class="o">(</span><span class="n">context</span><span class="o">);</span>
+  <span class="o">},</span>
+<span class="o">),</span>
+<span class="n">ListTile</span><span class="o">(</span>
+  <span class="nl">leading:</span> <span class="n">Icon</span><span class="o">(</span><span class="n">Icons</span><span class="o">.</span><span class="na">school</span><span class="o">),</span>
+  <span class="nl">title:</span> <span class="n">Text</span><span class="o">(</span><span class="s">"School"</span><span class="o">),</span>
+  <span class="nl">onTap:</span> <span class="o">(){</span>
+    <span class="c1">// change the content</span>
+    <span class="c1">//do the operation here...</span>
+    <span class="c1">//close the drawer</span>
+    <span class="n">Navigator</span><span class="o">.</span><span class="na">pop</span><span class="o">(</span><span class="n">context</span><span class="o">);</span>
+  <span class="o">},</span>
+<span class="o">),</span>
+</code></pre></div></div>
+<p>Define a new variable _selectedFragment:</p>
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Widget</span> <span class="n">_selectedFragment</span> <span class="o">=</span> <span class="n">AssesmentFragment</span><span class="o">();</span>
+</code></pre></div></div>
+<p>The variable stores the fragment to display and use the variable to display the content, so the body part changes to:</p>
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">body:</span> <span class="n">Container</span><span class="o">(</span>
+  <span class="nl">padding:</span> <span class="n">EdgeInsets</span><span class="o">.</span><span class="na">all</span><span class="o">(</span><span class="mi">8</span><span class="o">),</span>
+  <span class="nl">child:</span> <span class="n">_selectedFragment</span><span class="o">,</span>
+<span class="o">)</span>
+</code></pre></div></div>
+<p>Now for menu click in the navigation drawer, we update the fragment</p>
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">ListTile</span><span class="o">(</span>
+  <span class="nl">leading:</span> <span class="n">Icon</span><span class="o">(</span><span class="n">Icons</span><span class="o">.</span><span class="na">assessment</span><span class="o">),</span>
+  <span class="nl">title:</span> <span class="n">Text</span><span class="o">(</span><span class="s">"Assessment"</span><span class="o">),</span>
+  <span class="nl">onTap:</span> <span class="o">(){</span>
+    <span class="n">setState</span><span class="o">(()</span> <span class="o">{</span>
+      <span class="n">_selectedFragment</span> <span class="o">=</span> <span class="n">AssesmentFragment</span><span class="o">();</span>
+    <span class="o">});</span>
+    <span class="n">Navigator</span><span class="o">.</span><span class="na">pop</span><span class="o">(</span><span class="n">context</span><span class="o">);</span>
+  <span class="o">},</span>
+<span class="o">),</span>
+<span class="n">ListTile</span><span class="o">(</span>
+  <span class="nl">leading:</span> <span class="n">Icon</span><span class="o">(</span><span class="n">Icons</span><span class="o">.</span><span class="na">school</span><span class="o">),</span>
+  <span class="nl">title:</span> <span class="n">Text</span><span class="o">(</span><span class="s">"School"</span><span class="o">),</span>
+  <span class="nl">onTap:</span> <span class="o">(){</span>
+    <span class="n">setState</span><span class="o">(()</span> <span class="o">{</span>
+      <span class="n">_selectedFragment</span> <span class="o">=</span> <span class="n">SchoolFragment</span><span class="o">();</span>
+    <span class="o">});</span>
+    <span class="n">Navigator</span><span class="o">.</span><span class="na">pop</span><span class="o">(</span><span class="n">context</span><span class="o">);</span>
+  <span class="o">},</span>
+<span class="o">),</span>
+</code></pre></div></div>
+<p>The code for AssesmentFragment is:</p>
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="s">'package:flutter/material.dart'</span><span class="o">;</span>
+
+<span class="kd">class</span> <span class="nc">AssesmentFragment</span> <span class="kd">extends</span> <span class="n">StatelessWidget</span><span class="o">{</span>
+  <span class="nd">@override</span>
+  <span class="n">Widget</span> <span class="n">build</span><span class="o">(</span><span class="n">BuildContext</span> <span class="n">context</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">return</span> <span class="n">Text</span><span class="o">(</span><span class="s">'Assessment Fragment'</span><span class="o">,);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+<p>The code for SchoolFragment is:</p>
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="s">'package:flutter/material.dart'</span><span class="o">;</span>
+
+<span class="kd">class</span> <span class="nc">SchoolFragment</span> <span class="kd">extends</span> <span class="n">StatelessWidget</span><span class="o">{</span>
+  <span class="nd">@override</span>
+  <span class="n">Widget</span> <span class="n">build</span><span class="o">(</span><span class="n">BuildContext</span> <span class="n">context</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">return</span> <span class="n">Text</span><span class="o">(</span><span class="s">'School Fragment'</span><span class="o">,);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+<p>Let’s add a menu in the navigation drawer, which instead of updating the screen as a fragment navigates to a separate screen.</p>
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">ListTile</span><span class="o">(</span>
+  <span class="nl">leading:</span> <span class="n">Icon</span><span class="o">(</span><span class="n">Icons</span><span class="o">.</span><span class="na">announcement</span><span class="o">),</span>
+  <span class="nl">title:</span> <span class="n">Text</span><span class="o">(</span><span class="s">"Announcement"</span><span class="o">),</span>
+  <span class="nl">onTap:</span> <span class="o">(){</span>
+    <span class="n">Navigator</span><span class="o">.</span><span class="na">pop</span><span class="o">(</span><span class="n">context</span><span class="o">);</span>
+    <span class="n">Navigator</span><span class="o">.</span><span class="na">push</span><span class="o">(</span><span class="n">context</span><span class="o">,</span> <span class="n">MaterialPageRoute</span><span class="o">(</span><span class="nl">builder:</span> <span class="o">(</span><span class="n">context</span><span class="o">)=&gt;</span> <span class="n">NewScreen</span><span class="o">()));</span>
+  <span class="o">},</span>
+<span class="o">)</span>
+</code></pre></div></div>
+<p>The screen to which the menu click navigates to is:</p>
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="s">'package:flutter/material.dart'</span><span class="o">;</span>
+
+<span class="kd">class</span> <span class="nc">NewScreen</span> <span class="kd">extends</span> <span class="n">StatefulWidget</span> <span class="o">{</span>
+  <span class="kd">final</span> <span class="kt">String</span> <span class="n">slug</span><span class="o">;</span>
+
+  <span class="n">_NewScreenState</span> <span class="n">createState</span><span class="o">()</span> <span class="o">=&gt;</span> <span class="n">_NewScreenState</span><span class="o">();</span>
+
+  <span class="n">NewScreen</span><span class="o">({</span> <span class="k">this</span><span class="o">.</span><span class="na">slug</span><span class="o">});</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">_NewScreenState</span> <span class="kd">extends</span> <span class="n">State</span><span class="o">&lt;</span><span class="n">NewScreen</span><span class="o">&gt;</span> <span class="o">{</span>
+  <span class="kt">String</span> <span class="n">_pageContent</span> <span class="o">=</span> <span class="s">"New screen content"</span><span class="o">;</span>
+  <span class="kt">String</span> <span class="n">_pageTitle</span> <span class="o">=</span> <span class="s">"NewScreen"</span><span class="o">;</span>
+
+  <span class="nd">@override</span>
+  <span class="kt">void</span> <span class="n">initState</span><span class="o">()</span> <span class="o">{</span>
+    <span class="k">super</span><span class="o">.</span><span class="na">initState</span><span class="o">();</span>
+  <span class="o">}</span>
+
+  <span class="nd">@override</span>
+  <span class="n">Widget</span> <span class="n">build</span><span class="o">(</span><span class="n">BuildContext</span> <span class="n">context</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">return</span> <span class="n">Scaffold</span><span class="o">(</span>
+      <span class="nl">appBar:</span> <span class="n">AppBar</span><span class="o">(</span>
+        <span class="nl">title:</span> <span class="n">Text</span><span class="o">(</span><span class="n">_pageTitle</span><span class="o">),</span>
+      <span class="o">),</span>
+      <span class="nl">body:</span> <span class="n">Container</span><span class="o">(</span>
+        <span class="nl">padding:</span> <span class="n">EdgeInsets</span><span class="o">.</span><span class="na">all</span><span class="o">(</span><span class="mi">8</span><span class="o">),</span>
+        <span class="nl">child:</span> <span class="n">Column</span><span class="o">(</span>
+          <span class="nl">children:</span> <span class="o">&lt;</span><span class="n">Widget</span><span class="o">&gt;[</span>
+            <span class="n">Container</span><span class="o">(</span>
+                <span class="nl">child:</span><span class="n">Text</span><span class="o">(</span>
+                    <span class="n">_pageContent</span>
+                <span class="o">)</span>
+            <span class="o">),</span>
+          <span class="o">],</span>
+        <span class="o">),</span>
+      <span class="o">),</span>
+    <span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+<p>We still have one problem, we see grey color in the statusbar area of the navigation drawer which can be fixed by adding the following lines to the build function before</p>
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">return</span> <span class="nl">function:</span>
+<span class="n">SystemChrome</span><span class="o">.</span><span class="na">setSystemUIOverlayStyle</span><span class="o">(</span><span class="n">SystemUiOverlayStyle</span><span class="o">.</span><span class="na">light</span><span class="o">.</span><span class="na">copyWith</span><span class="o">(</span>
+    <span class="nl">statusBarColor:</span> <span class="n">Colors</span><span class="o">.</span><span class="na">blueAccent</span>
+<span class="o">));</span>
+</code></pre></div></div>
+<p>The final main.dart file looks as follows:</p>
+
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="s">'package:flutter/material.dart'</span><span class="o">;</span>
+<span class="kn">import</span> <span class="s">'package:flutter/services.dart'</span><span class="o">;</span>
+<span class="kn">import</span> <span class="s">'package:navigation_drawer_example/NewScreen.dart'</span><span class="o">;</span>
+<span class="kn">import</span> <span class="s">'fragments/AssesmentFragment.dart'</span><span class="o">;</span>
+<span class="kn">import</span> <span class="s">'fragments/SchoolFragment.dart'</span><span class="o">;</span>
+
+<span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="o">)</span> <span class="o">=&gt;</span> <span class="n">runApp</span><span class="o">(</span><span class="n">MyApp</span><span class="o">());</span>
+
+<span class="kd">class</span> <span class="nc">MyApp</span> <span class="kd">extends</span> <span class="n">StatelessWidget</span> <span class="o">{</span>
+  <span class="nd">@override</span>
+  <span class="n">Widget</span> <span class="n">build</span><span class="o">(</span><span class="n">BuildContext</span> <span class="n">context</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">return</span> <span class="n">MaterialApp</span><span class="o">(</span>
+      <span class="nl">title:</span> <span class="s">'Flutter Demo'</span><span class="o">,</span>
+      <span class="nl">debugShowCheckedModeBanner:</span> <span class="kc">false</span><span class="o">,</span>
+      <span class="nl">theme:</span> <span class="n">ThemeData</span><span class="o">(</span>
+        <span class="nl">primarySwatch:</span> <span class="n">Colors</span><span class="o">.</span><span class="na">blue</span><span class="o">,</span>
+      <span class="o">),</span>
+      <span class="nl">home:</span> <span class="n">MyHomePage</span><span class="o">(</span><span class="nl">title:</span> <span class="s">'Navigation Drawer Example'</span><span class="o">),</span>
+    <span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">MyHomePage</span> <span class="kd">extends</span> <span class="n">StatefulWidget</span> <span class="o">{</span>
+  <span class="n">MyHomePage</span><span class="o">({</span><span class="n">Key</span> <span class="n">key</span><span class="o">,</span> <span class="k">this</span><span class="o">.</span><span class="na">title</span><span class="o">})</span> <span class="o">:</span> <span class="k">super</span><span class="o">(</span><span class="nl">key:</span> <span class="n">key</span><span class="o">);</span>
+
+  <span class="kd">final</span> <span class="kt">String</span> <span class="n">title</span><span class="o">;</span>
+
+  <span class="nd">@override</span>
+  <span class="n">_MyHomePageState</span> <span class="n">createState</span><span class="o">()</span> <span class="o">=&gt;</span> <span class="n">_MyHomePageState</span><span class="o">();</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">_MyHomePageState</span> <span class="kd">extends</span> <span class="n">State</span><span class="o">&lt;</span><span class="n">MyHomePage</span><span class="o">&gt;</span> <span class="o">{</span>
+
+  <span class="n">Widget</span> <span class="n">_selectedFragment</span> <span class="o">=</span> <span class="n">AssesmentFragment</span><span class="o">();</span>
+
+  <span class="nd">@override</span>
+  <span class="n">Widget</span> <span class="n">build</span><span class="o">(</span><span class="n">BuildContext</span> <span class="n">context</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">SystemChrome</span><span class="o">.</span><span class="na">setSystemUIOverlayStyle</span><span class="o">(</span><span class="n">SystemUiOverlayStyle</span><span class="o">.</span><span class="na">light</span><span class="o">.</span><span class="na">copyWith</span><span class="o">(</span>
+        <span class="nl">statusBarColor:</span> <span class="n">Colors</span><span class="o">.</span><span class="na">blueAccent</span>
+    <span class="o">));</span>
+    <span class="k">return</span> <span class="n">Scaffold</span><span class="o">(</span>
+      <span class="nl">appBar:</span> <span class="n">AppBar</span><span class="o">(</span>
+        <span class="nl">title:</span> <span class="n">Text</span><span class="o">(</span><span class="n">widget</span><span class="o">.</span><span class="na">title</span><span class="o">),</span>
+      <span class="o">),</span>
+      <span class="nl">drawer:</span> <span class="n">Drawer</span><span class="o">(</span>
+        <span class="nl">child:</span> <span class="n">ListView</span><span class="o">(</span>
+          <span class="nl">children:</span> <span class="o">&lt;</span><span class="n">Widget</span><span class="o">&gt;[</span>
+          <span class="n">UserAccountsDrawerHeader</span><span class="o">(</span>
+            <span class="nl">accountEmail:</span> <span class="n">Text</span><span class="o">(</span><span class="s">"john.doe@example.com"</span><span class="o">),</span>
+            <span class="nl">accountName:</span> <span class="n">Text</span><span class="o">(</span><span class="s">"John Doe"</span><span class="o">),</span>
+            <span class="nl">currentAccountPicture:</span> <span class="n">ClipRRect</span><span class="o">(</span>
+              <span class="nl">borderRadius:</span> <span class="n">BorderRadius</span><span class="o">.</span><span class="na">circular</span><span class="o">(</span><span class="mi">110</span><span class="o">),</span>
+              <span class="nl">child:</span> <span class="n">Image</span><span class="o">.</span><span class="na">asset</span><span class="o">(</span><span class="s">"images/user1.jpg"</span><span class="o">,</span> <span class="nl">fit:</span> <span class="n">BoxFit</span><span class="o">.</span><span class="na">cover</span><span class="o">,),</span>
+            <span class="o">),</span>
+            <span class="nl">otherAccountsPictures:</span> <span class="o">&lt;</span><span class="n">Widget</span><span class="o">&gt;[</span>
+              <span class="n">ClipRRect</span><span class="o">(</span>
+                <span class="nl">borderRadius:</span> <span class="n">BorderRadius</span><span class="o">.</span><span class="na">circular</span><span class="o">(</span><span class="mi">110</span><span class="o">),</span>
+                <span class="nl">child:</span> <span class="n">Image</span><span class="o">.</span><span class="na">asset</span><span class="o">(</span><span class="s">"images/user2.jpg"</span><span class="o">,</span> <span class="nl">fit:</span> <span class="n">BoxFit</span><span class="o">.</span><span class="na">cover</span><span class="o">,),</span>
+              <span class="o">),</span>
+              <span class="n">ClipRRect</span><span class="o">(</span>
+                <span class="nl">borderRadius:</span> <span class="n">BorderRadius</span><span class="o">.</span><span class="na">circular</span><span class="o">(</span><span class="mi">110</span><span class="o">),</span>
+                <span class="nl">child:</span> <span class="n">Image</span><span class="o">.</span><span class="na">asset</span><span class="o">(</span><span class="s">"images/user3.jpg"</span><span class="o">,</span> <span class="nl">fit:</span> <span class="n">BoxFit</span><span class="o">.</span><span class="na">cover</span><span class="o">,),</span>
+              <span class="o">)</span>
+            <span class="o">],</span>
+            <span class="nl">decoration:</span> <span class="n">BoxDecoration</span><span class="o">(</span>
+              <span class="nl">color:</span> <span class="n">Colors</span><span class="o">.</span><span class="na">blue</span>
+            <span class="o">),</span>
+          <span class="o">),</span>
+            <span class="n">ListTile</span><span class="o">(</span>
+              <span class="nl">leading:</span> <span class="n">Icon</span><span class="o">(</span><span class="n">Icons</span><span class="o">.</span><span class="na">assessment</span><span class="o">),</span>
+              <span class="nl">title:</span> <span class="n">Text</span><span class="o">(</span><span class="s">"Assessment"</span><span class="o">),</span>
+              <span class="nl">onTap:</span> <span class="o">(){</span>
+                <span class="n">setState</span><span class="o">(()</span> <span class="o">{</span>
+                  <span class="n">_selectedFragment</span> <span class="o">=</span> <span class="n">AssesmentFragment</span><span class="o">();</span>
+                <span class="o">});</span>
+                <span class="n">Navigator</span><span class="o">.</span><span class="na">pop</span><span class="o">(</span><span class="n">context</span><span class="o">);</span>
+              <span class="o">},</span>
+            <span class="o">),</span>
+            <span class="n">ListTile</span><span class="o">(</span>
+              <span class="nl">leading:</span> <span class="n">Icon</span><span class="o">(</span><span class="n">Icons</span><span class="o">.</span><span class="na">school</span><span class="o">),</span>
+              <span class="nl">title:</span> <span class="n">Text</span><span class="o">(</span><span class="s">"School"</span><span class="o">),</span>
+              <span class="nl">onTap:</span> <span class="o">(){</span>
+                <span class="n">setState</span><span class="o">(()</span> <span class="o">{</span>
+                  <span class="n">_selectedFragment</span> <span class="o">=</span> <span class="n">SchoolFragment</span><span class="o">();</span>
+                <span class="o">});</span>
+                <span class="n">Navigator</span><span class="o">.</span><span class="na">pop</span><span class="o">(</span><span class="n">context</span><span class="o">);</span>
+              <span class="o">},</span>
+            <span class="o">),</span>
+            <span class="n">ListTile</span><span class="o">(</span>
+              <span class="nl">leading:</span> <span class="n">Icon</span><span class="o">(</span><span class="n">Icons</span><span class="o">.</span><span class="na">announcement</span><span class="o">),</span>
+              <span class="nl">title:</span> <span class="n">Text</span><span class="o">(</span><span class="s">"Announcement"</span><span class="o">),</span>
+              <span class="nl">onTap:</span> <span class="o">(){</span>
+                <span class="n">Navigator</span><span class="o">.</span><span class="na">pop</span><span class="o">(</span><span class="n">context</span><span class="o">);</span>
+                <span class="n">Navigator</span><span class="o">.</span><span class="na">push</span><span class="o">(</span><span class="n">context</span><span class="o">,</span> <span class="n">MaterialPageRoute</span><span class="o">(</span><span class="nl">builder:</span> <span class="o">(</span><span class="n">context</span><span class="o">)=&gt;</span> <span class="n">NewScreen</span><span class="o">()));</span>
+              <span class="o">},</span>
+            <span class="o">)</span>
+          <span class="o">],</span>
+        <span class="o">),</span>
+      <span class="o">),</span>
+      <span class="nl">body:</span> <span class="n">Container</span><span class="o">(</span>
+        <span class="nl">padding:</span> <span class="n">EdgeInsets</span><span class="o">.</span><span class="na">all</span><span class="o">(</span><span class="mi">8</span><span class="o">),</span>
+        <span class="nl">child:</span> <span class="n">_selectedFragment</span><span class="o">,</span>
+      <span class="o">)</span>
+    <span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+<p>Full code can be downloaded from <a href="https://github.com/opnchaudhary/Navigation-Drawer-Example" title="Navigation Drawer Source Code in GitHub">GitHub</a>.
+Image Used in the app:
+<a href="https://unsplash.com/photos/ROJFuWCsfmA">https://unsplash.com/photos/ROJFuWCsfmA</a><br />
+<a href="https://unsplash.com/photos/hh3ViD0r0Rc">https://unsplash.com/photos/hh3ViD0r0Rc</a><br />
+<a href="https://unsplash.com/photos/qmsP-aRLWsc">https://unsplash.com/photos/qmsP-aRLWsc</a></p>
+:ET
