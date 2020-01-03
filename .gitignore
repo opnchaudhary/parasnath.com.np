@@ -3,3 +3,5 @@
 .travis.yml
 .sonar-project.properties
 src/public/blog/
+.jekyll-cache/
+src/.jekyll-cache/
