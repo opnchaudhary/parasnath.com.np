@@ -54,16 +54,11 @@
     {% include analytics.html %}    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js"></script>
     <script>
-    WebFont.load({
-        google: {
-        families: ['Roboto']
-        }
-    });
-    const canonical = document.querySelector('link[rel="canonical"]');
-      if (canonical !== null) {
-        canonical.href = canonical.href.replace('/blog/blog/','/blog/');
-      }
-
+      WebFont.load({
+          google: {
+          families: ['Roboto']
+          }
+      });            
       if('serviceWorker' in navigator) {
         navigator.serviceWorker
            .register('/service-worker.js')
