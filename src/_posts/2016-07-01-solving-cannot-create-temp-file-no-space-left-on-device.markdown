@@ -5,6 +5,7 @@ author: Paras Nath
 date:   2016-07-01 18:51:02 +0545
 categories: [Linux]
 tags: [Linux]
+keywords: "Linux, Troubleshooting, Paras Nath Chaudhary"
 ---
 ![df command in Terminal ](/blog/assets/img/df-terminal.png)
 

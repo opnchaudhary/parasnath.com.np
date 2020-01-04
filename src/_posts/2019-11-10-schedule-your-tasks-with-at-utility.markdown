@@ -5,6 +5,7 @@ author: Paras Nath
 date:   2019-10-27 18:51:02 +0545
 categories: [Linux]
 tags: [at, Linux]
+keywords: "Linux, Paras Nath Chaudhary"
 ---
 In this post, I am going to share you about a utility in Linux for scheduling your scripts. I will be showing how you can use a very simple and easy utility called ‘at’. First of all, if its not already install you can install it by running:
 <!--more-->

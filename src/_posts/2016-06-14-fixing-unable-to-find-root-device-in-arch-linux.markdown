@@ -5,6 +5,7 @@ author: Paras Nath
 date:   2016-06-14 18:51:02 +0545
 categories: [Linux]
 tags: [Linux]
+keywords: "Linux, Troubleshooting, Paras Nath Chaudhary"
 ---
 ![Arch Linux Logo ](/blog/assets/img/arch-linux-logo.png)
 After been using Ubuntu/Fedora alternately one after the other for couple of years, I decided to use Arch Linux because of its concept of rolling-release unlike Ubuntu/Fedora. So on February 23rd I installed Arch on my system. <!--more-->It was working all good till June 11,2016 evening. When I suddenly bumped into an error when I booted up my system. I don't know what cause the error. As far as I remember , I forgot the update that was running in my guake terminal last time when I shutdown my computer. And then when I came back to turn it on. I had this error on my screen:

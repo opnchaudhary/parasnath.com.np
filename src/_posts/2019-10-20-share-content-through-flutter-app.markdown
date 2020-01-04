@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Share content through flutter app
-"
+title:  "Share content through flutter app"
 author: Paras Nath
 date:   2019-10-03 18:51:02 +0545
 categories: [Mobile Development, Flutter, Dart, Android]
 tags: [Fultter, Dart, Android]
+keywords: "Flutter, Dart, Android, Paras Nath Chaudhary"
 ---
 
 Today, in this post, I am going to share how you can share the content of your app using share plugin. It’s pretty easy to get this work. First of all create a flutter project then in your pubspec.yaml file add the following line in dependencies:
