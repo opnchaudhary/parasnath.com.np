@@ -5,3 +5,4 @@
 src/public/blog/
 .jekyll-cache/
 src/.jekyll-cache/
+src/_drafts/
