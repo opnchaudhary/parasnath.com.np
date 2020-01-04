@@ -5,6 +5,7 @@ author: Paras Nath
 date:   2019-10-26 18:51:02 +0545
 categories: Security
 tags: [Ransomware, Malware, Virus, Security]
+image: /assets/img/about-ransomware.png
 keywords: "Ransomware, Malware, Security, Paras Nath Chaudhary"
 ---
 ![about ransomware](/blog/assets/img/about-ransomware.jpeg)  

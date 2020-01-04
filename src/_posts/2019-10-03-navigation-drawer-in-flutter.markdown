@@ -5,6 +5,7 @@ author: Paras Nath
 date:   2019-10-03 18:51:02 +0545
 categories: [Mobile Development, Flutter, Dart, Android]
 tags: [Fultter, Dart, Android]
+image: /assets/img/navigation-drawer-in-flutter.png
 keywords: "Flutter, Dart, Android, Paras Nath Chaudhary"
 ---
 
