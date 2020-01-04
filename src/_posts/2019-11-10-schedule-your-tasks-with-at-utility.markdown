@@ -7,14 +7,17 @@ categories: [Linux]
 tags: [at, Linux]
 ---
 In this post, I am going to share you about a utility in Linux for scheduling your scripts. I will be showing how you can use a very simple and easy utility called ‘at’. First of all, if its not already install you can install it by running:
+<!--more-->
 ```bash
 $ sudo yum install at -y
 ```
+
 Now that at is installed. You can start the atd daemon:
+
 ```bash
 $ sudo yum start atd
 ```
-<!--more-->
+
 We are all set we can now schedule tasks. For our case we will use an example script ‘example.sh’ which will broadcast a message to the wall:
 echo “Script is running” | wall
 We will schedule the script to run now:

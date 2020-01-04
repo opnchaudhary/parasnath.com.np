@@ -13,12 +13,11 @@ Today in this post, I am going to describe about a problem I faced while I was t
 ```bash
 -bash: cannot create temp file for here-document: No space left on device
 ```
-
+<!--more-->
 When I checked for diskspace using the command:
 ```
 $ df -h
 ```
-<!--more-->
 I had the following output:
 ```bash
 /dev/root        20G  3.1G   16G  17% /

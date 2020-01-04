@@ -7,7 +7,7 @@ categories: [Linux]
 tags: [Linux]
 ---
 ![Arch Linux Logo ](/blog/assets/img/arch-linux-logo.png)
-After been using Ubuntu/Fedora alternately one after the other for couple of years, I decided to use Arch Linux because of its concept of rolling-release unlike Ubuntu/Fedora. So on February 23rd I installed Arch on my system. It was working all good till June 11,2016 evening. When I suddenly bumped into an error when I booted up my system. I don't know what cause the error. As far as I remember , I forgot the update that was running in my guake terminal last time when I shutdown my computer. And then when I came back to turn it on. I had this error on my screen:
+After been using Ubuntu/Fedora alternately one after the other for couple of years, I decided to use Arch Linux because of its concept of rolling-release unlike Ubuntu/Fedora. So on February 23rd I installed Arch on my system. <!--more-->It was working all good till June 11,2016 evening. When I suddenly bumped into an error when I booted up my system. I don't know what cause the error. As far as I remember , I forgot the update that was running in my guake terminal last time when I shutdown my computer. And then when I came back to turn it on. I had this error on my screen:
 
 ```bash
 Warning: /lib/modules/4.6.2-1-Arch/modules-.devname not found --ignoring
@@ -19,7 +19,6 @@ Youre are being dropped to a recovery shell
 sh: can't access tty: job control tunred off
 [rootfs]#_ 
 ```
-<!--more-->
 First thing I tried to do was type 'help' in the shell presented; the keyboard didn't respond. I was clueless. And then I started searching for this error in different forums for a fix. And somewhere I saw '# mkinitcpio -p linux' should fix it. So what I did was create bootable usb with the command.
 ```bash
 #dd if=arch.iso of=/dev/rdisk2 bs=1m

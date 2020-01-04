@@ -6,8 +6,8 @@ date:   2019-10-27 18:51:02 +0545
 categories: [Linux, VirtualBox, CentOS]
 tags: [CentOS, VirtualBox, Linux]
 ---
-VirtualBox is a free and open source hosted hypervisor developed by Oracle Corporation. It runs on Linux, Windows, Mac and Solaris hosts supporting a large number of guest operating systems. You will find several blog posts about the installation of VirtualBox in the older version of CentOS. Since, CentOS 8 came around two months ago in September 2019, in this post, I will be showing the steps to install VirtualBox 6 in CentOS 8.
-<!--more-->
+VirtualBox is a free and open source hosted hypervisor developed by Oracle Corporation. It runs on Linux, Windows, Mac and Solaris hosts supporting a large number of guest operating systems. You will find several blog posts about the installation of VirtualBox in the older version of CentOS. <!--more-->Since, CentOS 8 came around two months ago in September 2019, in this post, I will be showing the steps to install VirtualBox 6 in CentOS 8.
+
 First of all let’s install the header and development tools:
 ```bash
 $ sudo yum install -y kernel-devel kernel-headers gcc make perl

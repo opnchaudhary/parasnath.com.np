@@ -11,10 +11,10 @@ tags: [CentOS, Docker, docker-compose]
 
 Recently, I installed CentOS 8 for one of our in house development server. The server is used to run various docker images for development purpose. For which we wanted to use docker-compose too.
 To install docker-compose run:
+<!--more-->
 ```bash
 $ sudo curl -L “https://github.com/docker/compose/releases/download/1.24.1/docker-compose-$(uname -s)-$(uname -m)” -o /usr/local/bin/docker-compose
 ```
-<!--more-->
 The application is installed in /usr/local/bin/docker-compose. To make it executable run
 ```bash
 $ sudo chmod +x /usr/local/bin/docker-compose

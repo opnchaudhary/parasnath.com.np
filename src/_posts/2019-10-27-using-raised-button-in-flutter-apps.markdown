@@ -8,13 +8,14 @@ tags: [Flutter, Dart, Android]
 ---
 ![RaisedButton example in Flutter](/blog/assets/img/using-raisedbuttons-in-flutter-apps.png)
 RaisedButton is a Material design widget. In this post, I am going to show almost all the use cases you might need to know about RaisedButton. A simple usage of RaisedButton would be:
+<!--more-->
 ```dart
 RaisedButton(
   child: Text("Enabled Button"),
   onPressed: (){},
 ),
 ```
-<!--more-->
+
 For a disabled button:
 ```dart
 RaisedButton(

@@ -10,7 +10,7 @@ tags: [Fultter, Dart, Android]
 ![Navigation Drawer in Flutter](/blog/assets/img/navigation-drawer-in-flutter.png)
 In this post, I am going to show how you can implement Navigation Drawer in your flutter project.
 To add a drawer, in your build function ad drawer as follows
-
+<!--more-->
 ```dart
 return Scaffold(
     appBar: AppBar( title: Text(widget.title), ),
@@ -22,7 +22,6 @@ return Scaffold(
     body: Container(),
 );
 ```
-<!--more-->
 The first item to the ListView is DrawerHeader.
 ```dart
 DrawerHeader(

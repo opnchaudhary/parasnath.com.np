@@ -9,15 +9,18 @@ tags: [Fultter, Dart, Android]
 ---
 
 Today, in this post, I am going to share how you can share the content of your app using share plugin. It’s pretty easy to get this work. First of all create a flutter project then in your pubspec.yaml file add the following line in dependencies:
+
 ```yaml        
 share: ^0.6.2+3
 ```
+<!--more-->
 Then run,
+
 ```bash
 $ flutter packages get
 ```
 Now let’s create a button on click of which we will share the content we want to share. To share a plain text, we would simply import the library by placing
-<!--more-->
+
 ```dart
 import 'package:share/share.dart';
 ```
