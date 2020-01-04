@@ -1,5 +1,13 @@
 User-Agent: *
 Disallow: /readme.md
+
+# Directories
+Disallow: /zohoverify/
+Disallow: /.well-known/
+Disallow: /BingSiteAuth.xml
+Disallow: /googled70edeef4ee54e94.html
+
+# Sitemap
 Sitemap: http://parasnath.com.np/sitemap.xml
 
 User-Agent: Googlebot
