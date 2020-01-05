@@ -5,7 +5,7 @@ author: Paras Nath
 date:   2019-10-27 18:51:02 +0545
 categories: [Linux, Terminal]
 tags: [Linux, Terminal, ss]
-keywords:"Linux, Terminal, Paras Nath Chaudhary"
+keywords: "Linux, Terminal, Paras Nath Chaudhary"
 ---
 In this post, I will be discussing about a utility you will often use. The utility is ‘ss’. According to the man page of ss:
 ss is used to dump socket statistics. It allows showing information similar to netstat. It can display more TCP and state informations than other tools.
