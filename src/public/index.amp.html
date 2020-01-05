@@ -32,6 +32,24 @@
 
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
     <style type="text/css" amp-custom>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+        color: white;
+    }
+    a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+.container{
+    display: inline-block;
+}
+h1, h2{
+    text-align: left;
+}
         /* Social Links*/
         .social{
             position:relative;
@@ -50,22 +68,85 @@
         .github:hover svg{
             fill: #333;
         }
-            
+        section{
+    min-height: 100vh;    
+    display: flex;
+    flex-direction: column;        
+    justify-content: center;
+    overflow: hidden;
+    /*align-items: center;*/
+}
+section div{
+    padding: 0px 32px;
+}
+section li h3{
+    padding: 0px 32px;
+}
+section h1,section h2{
+    display: flex;
+    align-items: center;
+    height: 42px;
+    margin-top: 64px;
+    padding-left: 32px
+}
+section p, section ul{
+    margin-top: 24px;
+    padding: 0px 32px;   
+}
+section ul li{
+    margin: 8px 4px;
+    line-height: 1.5em;
+}
+section p{
+    display: flex;
+    align-items: center;
+}
+section h2{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}           
+        section:nth-child(odd){
+            background-color: #2196F3;    
+        }
+        section:nth-child(odd) p, section:nth-child(odd) h2, section:nth-child(odd) h3, section:nth-child(even) h4, section:nth-child(odd) ul li{
+    color: white;
+}
+section:nth-child(odd) h2{
+    width: 100%;
+    background: #2196F3;
+}
+section:nth-child(even){
+    background-color: white;
+    color: #2196F3;
+}
+section:nth-child(even) p, section:nth-child(even) h2, section:nth-child(even) h3, section:nth-child(even) h4, section:nth-child(even) ul li, section:nth-child(even) a, section:nth-child(even) span{    
+    color: #2196F3;
+}
+section:nth-child(even) h2{
+    width: 100%;
+    background: white;
+}
+#summary{
+    display: block;
+    line-height: 1.5;
+}
+#techstack{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+section h2{
+    padding-left: 32px;
+  } 
     </style>
 </head>
 <body  >    
     <div class="container h-card" itemscope itemtype="https://schema.org/Person">
-        <nav>            
-            <amp-img class="u-photo" height="400" width="400" layout="responsive" src="/images/paras.jpg" alt="Paras Nath" title="Paras Nath" itemprop="image" />
-            <ul>
-                <li><a title="About" href="#about">About</a></li>                
-                <li><a title="Experiences" href="#experiences">Experiences</a></li>
-                <li><a title="Awards & Certifications" href="#awards-and-certifications">Awards & Ceritifications</a></li>                
-                <li><a title="Education" href="#education">Education</a></li>
-                <li><a title="Publications" href="#publications">Publications</a></li>
-
-            </ul>
-        </nav>
+       
         <main>
             <section id="about">
                 <h1 itemprop="name" class="p-name"><span class="p-given-name" itemprop="givenName">Paras Nath</span>&nbsp;<span class="p-family-name" itemprop="familyName">Chaudhary</span></h1>
@@ -123,8 +204,7 @@
                         <p itemprop="spouse" itemscope itemtype="https://schema.org/Person">
                             He is married to&nbsp;<a title="Anita Chaudhary" target="_blank" rel="noopener noreferrer" itemprop="url" href="http://anitachaudhary.com.np">
                                 <span itemprop="givenName">Anita</span> 
-                                <span itemprop="familyName">Chaudhary</span>
-                            </a>.
+                                <span itemprop="familyName">Chaudhary</span></a>.
                         </p>
             </section>            
             <section id="experiences">
@@ -197,11 +277,147 @@
                         </li>
                 </ul>
             </section>
+            <section id="skills">
+                <h2>Skills</h2>
+                <ul id="techstack">
+                    <li>
+                        <figure>
+                            <img alt="Python" title="python" src="images/python.svg" />
+                            <figcaption>Python</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img alt="Django" title="Django" src="images/django.png" />
+                            <figcaption>Django</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img alt="Flask" title="Flask" src="images/flask.png" />
+                            <figcaption>Flask</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img alt="PHP" title="PHP" src="images/php.png" />
+                            <figcaption>PHP</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img alt="Laravel" title="Laravel" src="images/laravel.png" />
+                            <figcaption>Laravel</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img alt="Kotlin" title="Kotlin" src="images/kotlin.png" />
+                            <figcaption>Kotlin</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img alt="Android" title="Android" src="images/android.png" />
+                            <figcaption>Android</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img alt="Flutter" title="flutter" src="images/flutter.png" />
+                            <figcaption>Flutter</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img alt="PostgreSQL" title="PostgreSQL" src="images/postgresql.svg" />
+                            <figcaption> PostgreSQL</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img alt="Redis" title="Redis" src="images/redis.png" />
+                            <figcaption>Redis</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img alt="ElasticSearch" title="ElasticSearch" src="images/elastic.png" />
+                            <figcaption>ElasticSearch</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img alt="Git" title="Git" src="images/git.png" />
+                            <figcaption>Git</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img alt="Docker" title="Docker" src="images/docker.svg" />
+                            <figcaption>Docker</figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </section>
             <section id="publications">
                 <h2>Publications</h2>
+                <p style="font-size: 12px;color: gray;margin-top: 0;">Recent posts</p>                
                 <ul>
-                    <li>No papers published yet.</li>
+                    <li>
+                        <a title="How to install VirtualBox 6 in CentOS 8" href="https://parasnath.com.np/blog/how-to-install-virtualbox6-in-centos8/">
+                            How to install VirtualBox 6 in CentOS 8
+                        </a>
+                    </li>
+                    <li>
+                        <a title="Schedule your tasks with ‘at’ utility" href="https://parasnath.com.np/blog/schedule-your-tasks-with-at-utility/">
+                            Schedule your tasks with ‘at’ utility
+                        </a>
+                    </li>
+                    <li>
+                        <a title="Learn to use ss — utility to investigate sockets" href="https://parasnath.com.np/blog/learn-to-use-ss-utility-to-investigate-sockets/">
+                            Learn to use ss — utility to investigate sockets
+                        </a>
+                    </li>
+                    <li>
+                        <a title="Using RaisedButton in Flutter apps" href="https://parasnath.com.np/blog/using-raised-button-in-flutter-apps/">
+                            Using RaisedButton in Flutter apps
+                        </a>
+                    </li>
+                    <li>
+                        <a title="Things one should know about Ransomware" href="https://parasnath.com.np/blog/things-one-should-know-about-ransomware/">
+                            Things one should know about Ransomware
+                        </a>
+                    </li>
+                    <li>
+                        <a title="Install jdk7 in ubuntu 18.04" href="https://parasnath.com.np/blog/Install-jdk7-in-ubuntu-18-04/">
+                            Install jdk7 in ubuntu 18.04
+                        </a>
+                    </li>
+                    <li>
+                        <a title="How to use Arachni for web vulnerability scanner" href="https://parasnath.com.np/blog/how-to-use-arachni-for-web-vulnerability-scanning/">
+                            How to use Arachni for web vulnerability scanner
+                        </a>
+                    </li>
                 </ul>
+            </section>
+            <section id="footer" style="
+                min-height: 200px !important;
+                max-height: 300px !important;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            ">
+            <p>
+                Souce code on&nbsp;<a rel="noopener noreferrer" target="_blank" title="Source code of this website" href="https://github.com/opnchaudhary/parasnath.com.np">GitHub</a>.
+            </p>
+            <p>
+                Powered by:&nbsp;<a rel="noopener noreferrer" target="_blank" title="netlify" href="https://www.netlify.com/">netlify</a>&nbsp;and&nbsp;<a rel="noopener noreferrer" target="_blank" title="Cloudflare" href="https://www.cloudflare.com/">Cloudflare</a>
+            </p>
+                   
+                </div>
             </section>
         </main>
     </div>    
