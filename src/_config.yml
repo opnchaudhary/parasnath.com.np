@@ -11,7 +11,7 @@ author: Paras Nath Chaudhary
 # Short bio or description (displayed in the header)
 subtitle: for sharing ideas
 description: "Paras Nath's blog is a technical blog related to information technology. It is dedicated to sharing articles on the topics: open source, Linux, entrepreneur, programming, event."
-keywords: "Paras Nath Chaudhary, Freelancer, Mobile Developer, Web Developer, Flutter Developer, Hire Developer"
+keywords: "Paras Nath Chaudhary, Paras Chaudhary, Freelancer, Mobile Developer, Web Developer, Flutter Developer, Hire Developer"
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: /images/paras.jpg
 
@@ -23,11 +23,11 @@ destination: public/blog
 footer-links:
   dribbble:
   email: hello@parasnath.com.np
-  facebook:
+  facebook: opnchaudhary
   flickr:
   github: opnchaudhary
-  instagram:
-  linkedin: 
+  instagram: opnchaudhary
+  linkedin: opnchaudhary
   pinterest:
   rss: rss
   twitter: opnchaudhary
