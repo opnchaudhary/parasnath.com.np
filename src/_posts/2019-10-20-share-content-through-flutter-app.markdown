@@ -3,7 +3,7 @@ layout: post
 title:  "Share content through flutter app"
 author: Paras Nath
 date:   2019-10-03 18:51:02 +0545
-categories: [Mobile Development, Flutter, Dart, Android]
+categories: [Flutter]
 tags: [Fultter, Dart, Android]
 image: /assets/img/share-content-through-flutter-app.png
 keywords: "Flutter, Dart, Android, Paras Nath Chaudhary"

@@ -3,7 +3,7 @@ layout: post
 title:  "Install docker-compose in CentOS"
 author: Paras Nath Chaudhary
 date:   2019-10-19 18:51:02 +0545
-categories: [Docker, CentOS]
+categories: [Docker]
 tags: [CentOS, Docker, docker-compose]
 image: /assets/img/docker-centos.png
 keywords: "CentOS, Docker, docker-compose, Paras Nath Chaudhary"

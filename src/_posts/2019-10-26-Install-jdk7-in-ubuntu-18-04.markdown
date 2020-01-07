@@ -3,7 +3,7 @@ layout: post
 title:  "Install jdk7 in ubuntu 18.04"
 author: Paras Nath Chaudhary
 date:   2019-10-26 18:51:02 +0545
-categories: [Ubuntu, Java]
+categories: [Linux]
 tags: [Ubuntu, Java]
 keywords: "Ubuntu, JDK, Java, Paras Nath Chaudhary"
 ---

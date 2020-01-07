@@ -3,7 +3,7 @@ layout: post
 title:  "How to install VirtualBox6 in CentOS 8"
 author: Paras Nath
 date:   2019-10-27 18:51:02 +0545
-categories: [Linux, VirtualBox, CentOS]
+categories: [Linux]
 tags: [CentOS, VirtualBox, Linux]
 keywords: "VirtualBox, CentOS8, Linux, Paras Nath Chaudhary"
 image: /assets/img/virtualbox.png

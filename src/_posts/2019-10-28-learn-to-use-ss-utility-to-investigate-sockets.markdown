@@ -3,7 +3,7 @@ layout: post
 title:  "Learn to use ss — utility to investigate sockets"
 author: Paras Nath
 date:   2019-10-27 18:51:02 +0545
-categories: [Linux, Terminal]
+categories: [Linux]
 tags: [Linux, Terminal, ss]
 keywords: "Linux, Terminal, Paras Nath Chaudhary"
 ---

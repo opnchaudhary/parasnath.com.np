@@ -3,7 +3,7 @@ layout: post
 title:  "Using RaisedButton in Flutter Apps"
 author: Paras Nath
 date:   2019-10-27 18:51:02 +0545
-categories: [Flutter, Dart, Android]
+categories: [Mobile Development]
 tags: [Flutter, Dart, Android]
 image: /assets/img/using-raisedbuttons-in-flutter-apps.png
 keywords: "Flutter, Dart, Android, Paras Nath Chaudhary"
