@@ -26,7 +26,7 @@ In case you are using ubuntu, you can install with the following command:
 Then edit the configuration file /etc/pound/pound.cfg
 
 You can find an example use of Load Balancing with Pound here. The example uses two NGINX server as backend and uses CentOS with Pound for the reverse-proxy load balancing. The very basic configuration used is as:
-```txt
+```nginx
 Daemon 0
 
 ListenHTTP
