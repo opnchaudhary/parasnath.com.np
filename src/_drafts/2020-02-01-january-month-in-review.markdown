@@ -17,18 +17,22 @@ Looking back in January, I am glad to have performed the following activities:
     * [Load balancing with Pound](https://parasnath.com.np/blog/load-balancing-with-pound/)
     * [Using Custom fonts with Flutter](https://parasnath.com.np/blog/)
     * [Setting up lamp server along with reverse proxy using Nginx](https://parasnath.com.np)
-* Optimized SEO of my blog post
+* Optimized SEO of my blog
 * Prepared and attended [PSC](http://psc.gov.np/) practical exam
 * At work:
     * Finished a security audit report
     * Deployed CRM application in CentOS using docker
     * Studied about [OWASP Top 10 Proactive Controls V3](https://www.owasp.org/images/b/bc/OWASP_Top_10_Proactive_Controls_V3.pdf) 
+* Studied for my internal exams of Masters Second Semester
 
 ## What could have been improved?
+* Fix the sleep schedule
+* Focus more on the studies during the exams instead of procastinating and watchig movies
 
 ## For next month
 For the next month, February, I plan to do the following activities:  
-* 
+* Read four research papers a month
+* Learn about e-mail marketing
 
 Keep an eye for the next month's monthly review here.
 
