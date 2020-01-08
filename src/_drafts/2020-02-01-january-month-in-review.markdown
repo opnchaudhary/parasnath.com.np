@@ -23,3 +23,5 @@ Looking back in January, I am glad to have performed the following activities:
 
 What I want to achieve in February:  
 * 
+
+Keep an eye for the next month's monthly review here.
