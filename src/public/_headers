@@ -3,5 +3,5 @@
   X-XSS-Protection: 1; mode=block
   Feature-Policy: geolocation 'none'; camera 'none'; microphone 'none'  
   Content-Security-Policy: default-src 'none'; form-action 'self'; frame-ancestors 'none'; style-src 'self' googleapis.com; script-src 'self' ajax.googleapis.com cdnjs.cloudflare.com googletagmanager.com ajax.cloudflare.com google-analytics.com; img-src 'self';
-  Access-Control-Allow-Origin: null
+  Access-Control-Allow-Origin: parasnath.com.np
   Referrer-Policy: origin
