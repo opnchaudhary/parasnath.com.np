@@ -2,6 +2,6 @@
   X-Frame-Options: DENY
   X-XSS-Protection: 1; mode=block
   Feature-Policy: geolocation 'none'; camera 'none'; microphone 'none'  
-  Content-Security-Policy-Report-Only: default-src 'self'; form-action 'self'; frame-ancestors 'none'; style-src 'self' fonts.googleapis.com; script-src 'self' data: 'sha256-PLtqqPWg3xoC21qzhBjUJcpo3xrqxb6ekaQmh8q6Vc8=' 'sha256-EFXrF6z+7R4VR7zhg8xUh2T6JIcun1lNhJ8xchOyNoE=' static.cloudflareinsights.com ajax.googleapis.com cdnjs.cloudflare.com www.googletagmanager.com ajax.cloudflare.com *.google-analytics.com; img-src 'self' data:; manifest-src 'self'; font-src data: fonts.googleapis.com fonts.gstatic.com;
+  Content-Security-Policy-Report-Only: default-src 'self'; form-action 'self'; frame-ancestors 'none'; style-src 'self' fonts.googleapis.com; script-src 'self' data: 'sha256-PLtqqPWg3xoC21qzhBjUJcpo3xrqxb6ekaQmh8q6Vc8=' 'sha256-EFXrF6z+7R4VR7zhg8xUh2T6JIcun1lNhJ8xchOyNoE=' static.cloudflareinsights.com ajax.googleapis.com cdnjs.cloudflare.com www.googletagmanager.com ajax.cloudflare.com *.google-analytics.com; img-src 'self' data:; manifest-src 'self'; font-src data: fonts.googleapis.com fonts.gstatic.com;prefetch-src *.disquscdn.com disqus.com;frame-src disqus.com
   Access-Control-Allow-Origin: parasnath.com.np  
   Referrer-Policy: strict-origin
