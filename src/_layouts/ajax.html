@@ -1,0 +1,8 @@
+<div id="recent-posts">
+    {% for post in site.posts limit:7 %}
+      <div>
+        <a title="{{ post.title }}"" href="/blog{{ post.url }}"><h3>{{post.title}}</h3></a>        
+        <p class="post_date">{{ post.date | date: "%B %e, %Y" }}</p>
+      </div>
+    {% endfor %}
+</div>
