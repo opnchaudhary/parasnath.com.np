@@ -216,3 +216,19 @@ svg{
     margin-left: 0px !important;    
   }
 }
+
+#recent-posts{
+    display: flex;
+    flex-direction: column;
+    padding: 0;   
+    margin-top: 8px;     
+}
+#recent-posts div{
+    margin-bottom: 12px;
+}
+#recent-posts p{
+    font-size: 0.9em;
+    margin: 0;
+    margin-top: 4px;
+    padding: 0;
+}

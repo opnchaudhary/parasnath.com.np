@@ -16,7 +16,7 @@
     <!-- date is month/day/year -->
     <meta name="revised" content="Paras Nath, 01/01/2020">
 
-    <link rel="stylesheet" type="text/css" href="/css/style.min.css" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" type="text/css" href="/css/style.css" media="print" onload="this.media='all'" >
 
     <meta property="fb:app_id" content="451260662455063">
     <meta property="og:type" content="website">
@@ -279,43 +279,7 @@
             <section id="publications">
                 <h2>Publications</h2>
                 <p style="font-size: 12px;color: gray;margin-top: 0;">Recent posts</p>                
-                <ul>
-                    <li>
-                        <a title="How to install VirtualBox 6 in CentOS 8" href="https://parasnath.com.np/blog/how-to-install-virtualbox6-in-centos8/">
-                            How to install VirtualBox 6 in CentOS 8
-                        </a>
-                    </li>
-                    <li>
-                        <a title="Schedule your tasks with ‘at’ utility" href="https://parasnath.com.np/blog/schedule-your-tasks-with-at-utility/">
-                            Schedule your tasks with ‘at’ utility
-                        </a>
-                    </li>
-                    <li>
-                        <a title="Learn to use ss — utility to investigate sockets" href="https://parasnath.com.np/blog/learn-to-use-ss-utility-to-investigate-sockets/">
-                            Learn to use ss — utility to investigate sockets
-                        </a>
-                    </li>
-                    <li>
-                        <a title="Using RaisedButton in Flutter apps" href="https://parasnath.com.np/blog/using-raised-button-in-flutter-apps/">
-                            Using RaisedButton in Flutter apps
-                        </a>
-                    </li>
-                    <li>
-                        <a title="Things one should know about Ransomware" href="https://parasnath.com.np/blog/things-one-should-know-about-ransomware/">
-                            Things one should know about Ransomware
-                        </a>
-                    </li>
-                    <li>
-                        <a title="Install jdk7 in ubuntu 18.04" href="https://parasnath.com.np/blog/Install-jdk7-in-ubuntu-18-04/">
-                            Install jdk7 in ubuntu 18.04
-                        </a>
-                    </li>
-                    <li>
-                        <a title="How to use Arachni for web vulnerability scanner" href="https://parasnath.com.np/blog/how-to-use-arachni-for-web-vulnerability-scanning/">
-                            How to use Arachni for web vulnerability scanner
-                        </a>
-                    </li>
-                </ul>
+                
             </section>
             <section id="footer" style="
                min-height: 200px !important;
@@ -370,6 +334,14 @@
             window.location.hash = hash;
           });
         } // End if
+      });
+
+      $.ajax({
+        url: '/blog/ajax/',
+        type: 'GET',
+        success: function(data){            ;
+            $('#publications').html($('#publications').html()+data);
+        }
       });
     });
 
