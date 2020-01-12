@@ -18,7 +18,7 @@ Configure the firewall
 # firewall-cmd -P - add-service=https
 ```
 enable home directory serving by editing /etc/httpd/conf.d/userdir.conf
-```nginx
+```
 <IfModule mod_userdir.c>
     # UserDir disabled
     UserDir public_html

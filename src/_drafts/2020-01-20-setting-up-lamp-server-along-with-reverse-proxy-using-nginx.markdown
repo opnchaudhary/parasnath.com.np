@@ -60,7 +60,7 @@ Start Nginx and set it to start at boot
 # systemctl enable - now ngnix
 ```
 To configure the reverse proxy, in your nginx.conf file you can add
-```nginx
+```
 server {
 ….
  /{

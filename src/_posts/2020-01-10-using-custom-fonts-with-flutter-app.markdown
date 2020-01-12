@@ -9,7 +9,7 @@ keywords: "Flutter, Dart, Android"
 ---
 The default fonts in the flutter application are great. However, if we want to have custom fonts in the app, we can do that pretty easily. It's pretty easy to use. First of all, download the .ttf files of the fonts and add them to the 'fonts' directory inside your flutter project. The directory structure should be like:
 <!--more-->
-```nginx
+```
 flutter_project/
  - android/
  - build/
