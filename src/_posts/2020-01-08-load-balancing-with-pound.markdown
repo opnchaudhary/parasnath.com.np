@@ -1,11 +1,12 @@
 ---
 layout: post
 title:  "Load balancing with Pound"
-author: Paras Nath
+author: Paras Nath Chaudhary
 date:   2020-01-08 22:17:02 +0545
 categories: [Linux]
-tags: [CentOS, Pound, Linux]
-keywords: "CentOS, Linux, Pound"
+tags: [CentOS, Pound, Linux, DevOps]
+keywords: "CentOS, Linux, Pound, DevOps"
+canonical_url: 'https://medium.com/@opnchaudhary/load-balancing-with-pound-f8576ad7e222'
 ---
 Pound is a reverse-proxy load balancing server. It accepts requests from HTTP/HTTPS clients and distributes them to one or more Web servers. The HTTPS requests are decrypted and passed to the back-ends as plain HTTP.<!--more-->
 If more than one back-end server is defined, Pound chooses one of them randomly, based on defined priorities. By default, Pound keeps track of associations between clients and back-end servers (sessions).
