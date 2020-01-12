@@ -144,7 +144,20 @@ section ul li div{
     height: 3rem;
     width: auto;
 }
-
+#publications p{
+    font-size: 12px;
+    color: gray;
+    margin-top: 0;
+}
+#footer{
+    min-height: 200px !important;
+    max-height: 300px !important;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 /* Social Links*/
 .social{
     position:relative;
