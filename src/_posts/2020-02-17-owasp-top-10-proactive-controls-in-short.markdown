@@ -15,7 +15,7 @@ Software Security is a measure concern today. We can no longer tolerate simple s
 OWASP Top 10 Proactive controls is a list of security technique that should be considered for every software development. They top 10 controls are listed as follows in the order of their importance, first being the topmost priority. 
 
 * Define Security Requirements  
- A security requirement is a statement of needed security functionality that ensures one of the many different security properties of software being satisfied. OWASP Application Security Verification Standard (ASVS) can be used to define security requirements. OWASP ASVS is a catalog of available security requirements and verification criteria.  
+ A security requirement is a statement of needed security functionality that ensures one of the many different security properties of software being satisfied. OWASP Application Security Verification Standard (ASVS) can be used to define security requirements. [OWASP ASVS](https://www.owasp.org/index.php/Category:OWASP_Application_Security_Verification_Standard_Project) is a catalog of available security requirements and verification criteria.  
 * Leverage security frameworks and libraries  
  A developer writing an application might not have sufficient knowledge, time or budget to properly implement or maintain security features. Therefore, secure coding libraries and frameworks should be leveraged as much as possible. The embedded security in such libraries and frameworks help guard against security-related design and implementation flaws. 
  
