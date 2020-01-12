@@ -1,12 +1,12 @@
 ---
 layout: post
 title:  "Things one should know about ransomware"
-author: Paras Nath
+author: Paras Nath Chaudhary
 date:   2019-10-26 18:51:02 +0545
 categories: Security
 tags: [Ransomware, Malware, Virus, Security]
 image: /assets/img/about-ransomware.png
-keywords: "Ransomware, Malware, Security, Paras Nath Chaudhary"
+keywords: "Ransomware, Malware, Security"
 ---
 ![about ransomware](/blog/assets/img/about-ransomware.jpeg)  
 Ransomware is a type of malicious software designed to deny access to a computer system or data until a ransom is paid. They are usually spread through phishing emails, infected websites and malvertising (malicious advertising). <!--more-->One must not forget that though they ransom notice says file will be recovered after the ransom is paid, but it is not guaranteed. 

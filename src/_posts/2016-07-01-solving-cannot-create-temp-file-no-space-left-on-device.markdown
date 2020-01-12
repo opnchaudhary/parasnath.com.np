@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Solving '-bash: cannot create temp file for here-document: No space left on device'"
-author: Paras Nath
+author: Paras Nath Chaudhary
 date:   2016-07-01 18:51:02 +0545
 categories: [Linux]
 tags: [Linux]

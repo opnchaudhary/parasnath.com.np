@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Navigation Drawer in flutter"
-author: Paras Nath
+author: Paras Nath Chaudhary
 date:   2019-10-03 18:51:02 +0545
 categories: [Flutter]
 tags: [Fultter, Dart, Android]

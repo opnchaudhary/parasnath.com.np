@@ -5,7 +5,7 @@ author: Paras Nath Chaudhary
 date:   2019-10-26 18:51:02 +0545
 categories: [Linux]
 tags: [Ubuntu, Java]
-keywords: "Ubuntu, JDK, Java, Paras Nath Chaudhary"
+keywords: "Ubuntu, JDK, Java"
 ---
 JDK7 has been deprecated however, there are still softwares that depend on it. I came across similar issue today and therefor I had to install jdk7. I will show what you need to do if you want to do the same. Frist download archive file of jdk from <!--more-->https://www.oracle.com/technetwork/java/javase/downloads/java-archive-downloads-javase7-521261.html. In my case I am going to download jdk-7u80-linux-x64.tar.gz. Now extract the file with the following command:
 ```bash

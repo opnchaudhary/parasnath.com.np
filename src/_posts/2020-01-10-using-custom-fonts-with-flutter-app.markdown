@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Using custom fonts with flutter app"
-author: Paras Nath
+author: Paras Nath Chaudhary
 date:   2020-01-10 18:51:02 +0545
 categories: [Flutter]
 tags: [Fultter, Dart, Android]

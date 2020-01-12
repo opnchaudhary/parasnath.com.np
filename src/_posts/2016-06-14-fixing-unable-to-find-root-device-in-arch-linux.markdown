@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "ArchLinux crashed with error 'Unable to find root device...Youre are being dropped to a recovery shell'"
-author: Paras Nath
+author: Paras Nath Chaudhary
 date:   2016-06-14 18:51:02 +0545
 categories: [Linux]
 tags: [Linux]
