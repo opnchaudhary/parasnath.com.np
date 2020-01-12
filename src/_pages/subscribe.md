@@ -32,7 +32,7 @@ button:hover{
 }
 </style>
 
-<form name="Subscription" netlify itemprop="potentialAction" itemscope itemtype="https://schema.org/CreateAction">
+<form name="Subscription" netlify>
     <p>Subscribe to receive latest updates straight in your inbox.</p>
     <p>
             <label>Name <input type="text" name="name" /></label>

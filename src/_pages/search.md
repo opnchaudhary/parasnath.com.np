@@ -4,7 +4,7 @@ title: Search
 permalink: /search/
 ---
 
-<div id="search-container" itemprop="potentialAction" itemscope itemtype="https://schema.org/SearchAction">
+<div id="search-container">
     <input type="text" id="search-input" placeholder="Search through the blog posts...">
     <ul id="results-container"></ul>
 </div>

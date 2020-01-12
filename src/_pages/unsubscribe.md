@@ -38,7 +38,7 @@ button:hover{
 }
 </style>
 
-<form name="Subscription" netlify  itemscope itemtype="https://schema.org/UpdateAction">
+<form name="Subscription" netlify>
     <p>Let us know why you are unsubscribing</p>
     <p>
         <label>Email <input type="email" name="email" /></label>
