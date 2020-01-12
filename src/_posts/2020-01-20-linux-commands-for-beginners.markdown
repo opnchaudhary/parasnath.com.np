@@ -157,3 +157,5 @@ So, fire up your terminal and let's get started with the very basic things.
     ```bash
     $ pacman -Rns gimp
     ```
+
+Please let me know in the comments down there if there is any specific command you want to know about.    
