@@ -127,6 +127,9 @@ section:nth-child(even) h2{
     width: 100%;
     background: white;
 }
+#experiences ul{
+    padding:0px;
+}
 #summary{
     display: block;
     line-height: 1.5;
@@ -142,6 +145,19 @@ section:nth-child(even) h2{
 section h2{
     padding-left: 32px;
   } 
+  
+  #education div, #education li h3{
+      padding: 0px !important;
+  }
+  #footer{
+    min-height: 200px !important;
+    max-height: 300px !important;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
     </style>
 </head>
 <body  >    
@@ -221,19 +237,25 @@ section h2{
                             </li>
                             <li class="p-org h-card" itemprop="hasOccupation" itemscope itemtype="https://schema.org/OrganizationRole">
                                 <h3 class="p-name" itemprop="name"><a title="KonnectCorp International" target="_blank" rel="noopener noreferrer" class="u-url" itemprop="url" href="https://www.konnectcorp.com">KonnectCorp International</a> </h3>                            
-                                <span itemprop="roleName">Roku/Android Developer</span><br />
-                                <span itemprop="startDate">2013</span> - <span itemprop="endDate">2015</span>
+                                <link itemprop="sameAs" href="https://konnectcorp.com">
+                                <div itemprop="member" itemscope itemtype="https://schema.org/OrganizationRole">
+                                    <span itemprop="roleName">Roku/Android Developer</span><br />
+                                    <span itemprop="startDate">2013</span> - <span itemprop="endDate">2015</span>
+                                </div>
                             </li>
                             <li class="p-org h-card" itemprop="hasOccupation" itemscope itemtype="https://schema.org/OrganizationRole">
                                 <h3 class="p-name" itemprop="name"><a title="Colors2Web" target="_blank" rel="noopener noreferrer" class="u-url" itemprop="url" href="https://colors2web.com">Colors2Web</a> </h3>                            
-                                <span itemprop="roleName">Senior Web Developer</span><br />
-                                <span itemprop="startDate">2012</span> - <span itemprop="endDate">2014</span>
+                                <link itemprop="sameAs" href="https://colors2web.com">
+                                <div itemprop="member" itemscope itemtype="https://schema.org/OrganizationRole">
+                                    <span itemprop="roleName">Senior Web Developer</span><br />
+                                    <span itemprop="startDate">2012</span> - <span itemprop="endDate">2014</span>
+                                </div>
                             </li>                      
                     </ul>                
             </section>
             <section id="awards-and-certifications">
                 <h2>Awards & Ceritifications</h2>
-                <p>
+                <div>
                     <h3>Awards</h3>
                     <ul itemprop="awards" >
                         <li itemprop="award">Best Project Award, NCIT</li>
@@ -245,7 +267,7 @@ section h2{
                         <li>M101P: MongoDB for Developers</li>
                     </ul>
                     
-                </p>
+                </div>
                 
             </section>
             <section id="education">
@@ -401,23 +423,13 @@ section h2{
                     </li>
                 </ul>
             </section>
-            <section id="footer" style="
-                min-height: 200px !important;
-                max-height: 300px !important;
-                width: 100%;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-            ">
+            <section id="footer">
             <p>
                 Souce code on&nbsp;<a rel="noopener noreferrer" target="_blank" title="Source code of this website" href="https://github.com/opnchaudhary/parasnath.com.np">GitHub</a>.
             </p>
             <p>
                 Powered by:&nbsp;<a rel="noopener noreferrer" target="_blank" title="netlify" href="https://www.netlify.com/">netlify</a>&nbsp;and&nbsp;<a rel="noopener noreferrer" target="_blank" title="Cloudflare" href="https://www.cloudflare.com/">Cloudflare</a>
             </p>
-                   
-                </div>
             </section>
         </main>
     </div>    
