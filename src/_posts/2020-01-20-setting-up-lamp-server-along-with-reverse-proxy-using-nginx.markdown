@@ -8,12 +8,13 @@ tags: [Nginx, LAMP, Linux, SELinux]
 keywords: "Nginx, LAMP, Linux, SELinux"
 ---
 
-In this post, I am going to show you how you can set up a LAMP along with reverse proxy using Nginx. The system I am using is CentOS 8, which is L of LAMP. For additional security, I will configure the system with SELinux. Therefore,  let's set SELinux to enforcing:
+In this post, I am going to show you how you can set up a LAMP server along with reverse proxy using Nginx. The system I am using here is CentOS 8.
+We will not just install the packages and but also enable SELinux and configure it to work with the LAMP setup. So, we need to set SELinux to enforcing which can be done by running the following command:
 ```bash
 # setenforce 1
 ```
 
-Now that you have enabled SELinux in your Linux system, Let's install the Apache server by install httpd package.
+Now that you have enabled SELinux in your Linux system, Let's install the Apache server by installing httpd package.
 ```bash
 # yum install httpd -y
 ```
@@ -39,11 +40,13 @@ Now its time to install PHP. 
 ```bash
 # yum module install php -y
 ```
+
 To allow PHP connect to MariaDB install php-mysqlnd:
 ```bash
 # yum -y install php-mysqlnd
 ```
-Also, allow Apache to connect to MariaDB by running the following command:
+
+Also, allow Apache to connect to MariaDB through the network by running the following command:
 ```bash
 # setsebool -P httpd_can_network_connect_db on
 ```
@@ -55,29 +58,31 @@ Now that, we have install LAMP, we will install Nginx and configure reverse prox
 ```bash
 # yum install nginx -y
 ```
+
 Start Nginx and set it to start at boot
 ```bash
 # systemctl enable - now ngnix
 ```
+
 To configure the reverse proxy, in your nginx.conf file you can add
-```
+```txt
 server {
-….
- /{
-proxy_pass http://localhost:81/
-index index.html index.html
-}
-….
+
+    / {
+        proxy_pass http://localhost:81/
+        index index.html index.html
+    }
+
 }
 ```
 
-Open the ports 80 and 443 on the system with the following command:
+Let's configure the firewall to open the ports 80 and 443 on the system with the following command:
 ```bash
 # firewall-cmd - add-service=http - add-service=https - permanent
 # firewall-cmd - reload
 ```
 
-Set sebool for httpd_can_network_connect to on, with -P option for persistence across a system reboot.
+SELinux disables any web server to connect to the network. To enable network connection, we need to set sebool httpd_can_network_connect to on. We use -P option for persistence change across a system reboot.
 ```bash
 # setsebool -P httpd_can_network_connect on
 ```
