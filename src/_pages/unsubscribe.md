@@ -2,6 +2,7 @@
 layout: page
 title: Unsubscribe
 permalink: /unsubscribe/
+sitemap: false
 ---
 <style>
 form{
