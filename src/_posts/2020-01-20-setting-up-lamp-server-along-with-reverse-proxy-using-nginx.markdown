@@ -7,9 +7,10 @@ categories: [Linux]
 tags: [Nginx, LAMP, Linux, SELinux]
 keywords: "Nginx, LAMP, Linux, SELinux"
 ---
-
+## TL;DR
 In this post, I am going to show you how you can set up a LAMP server along with reverse proxy using Nginx. The system I am using here is CentOS 8.
-We will not just install the packages and but also enable SELinux and configure it to work with the LAMP setup. So, we need to set SELinux to enforcing which can be done by running the following command:
+<!--more-->
+Here, we will not just install the packages and but also enable SELinux and configure it to work with the LAMP setup. So, we need to set SELinux to enforcing which can be done by running the following command:
 ```bash
 # setenforce 1
 ```
