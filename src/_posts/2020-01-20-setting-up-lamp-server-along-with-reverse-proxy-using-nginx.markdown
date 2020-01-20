@@ -66,7 +66,7 @@ Start Nginx and set it to start at boot
 ```
 
 To configure the reverse proxy, in your nginx.conf file you can add
-```txt
+```
 server {
 
     / {
