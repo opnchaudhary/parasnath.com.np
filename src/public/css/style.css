@@ -4,6 +4,12 @@
     font-family: 'Roboto', sans-serif;
     color: white;
 }
+@font-face {
+  font-family: initial;
+  font-style: normal;
+  src: url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2) format('woff2');
+  font-display: swap;
+}
 html {
   scroll-behavior: smooth;
 }
