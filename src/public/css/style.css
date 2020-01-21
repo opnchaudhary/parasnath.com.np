@@ -125,7 +125,13 @@ section ul li div{
 #experiences,#portfolio, #testimonials, #awards-and-certifications, #education, #skills, #services, #publications{
     width: 100%;
 }
-
+#services img{
+    width:80px;
+    align-self: center;
+    padding-top: 8px;
+    margin-bottom: 16px;
+    filter: invert(1);
+}
 #awards-and-certifications h3{
     padding: 0px 0px;
     margin-top: 20px;
@@ -164,7 +170,7 @@ section ul li div{
     border-radius: 8px;    
     background-color: #1da1f2;
     padding: 8px;
-    max-width: 40%;
+    max-width: 44%;
 }
 .service h3, .service p{
     color: white !important;

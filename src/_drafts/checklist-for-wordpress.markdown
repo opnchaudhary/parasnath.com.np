@@ -4,4 +4,4 @@
 * Enable Akismet
 * Use proper permalink with .htaccess
 * Verify your site with Google/Bing
-* 
+* Install security plugin
