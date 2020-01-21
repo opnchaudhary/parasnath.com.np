@@ -16,6 +16,8 @@ self.addEventListener('install', function(e) {
        '/images/paras-nath-chaudhary.jpg',
        '/images/visit-nepal-2020.png',
        '/blog/',
+       '/blog/ajax/',
+       '/blog/ajax/index.html',
        '/blog/index.html',
        '/blog/assets/style.css'
      ]).then(() => self.skipWaiting());
