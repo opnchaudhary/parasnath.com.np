@@ -11,7 +11,7 @@ self.addEventListener('install', function(e) {
      return cache.addAll([
        '/',
        '/index.html',
-       '/css/style.min.css',
+       '/css/style.css',
        '/images/paras.jpg',
        '/images/paras-nath-chaudhary.jpg',
        '/images/visit-nepal-2020.png',
