@@ -69,7 +69,7 @@ section p, section ul{
     padding: 0px 32px;   
 }
 section ul li{
-    margin: 8px 4px;
+    margin: 24px 4px;
     line-height: 1.5em;
 }
 section p{
