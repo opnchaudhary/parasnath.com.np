@@ -1142,3 +1142,22 @@ Modules - reusable parts of our design
 //@import "highlights";
 @import "darcula";
 @import "svg-icons";
+.gdpr{
+  position: fixed;;
+  bottom: 0;    
+  z-index: 5;
+  background-color: black;
+  padding: 8px;
+  width: 75%;
+}
+.btn{
+  background: #0069c0;
+  color: white;
+  padding: 2px 10px;
+  border: none;
+  height: 2em;
+  margin: 2px
+}
+.hide{
+  display: none;
+}

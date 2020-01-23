@@ -49,10 +49,61 @@
         </div>
       </div>
     </div>
-
+    <div class="gdpr hide">
+        We use cookies to ensure that we give you the best experience on our website. If you continue to use this site we will assume that you are happy with it.
+        <br /><br />
+        <a class="btn" href="javascript:acceptGdpr()">Ok</a>
+        <a class="btn" href="javascript:rejectGdpr()">No</a>
+        <a class="btn" href="/blog/privacy-policy/">Privacy Policy</a>
+    </div>
     {% include analytics.html %}    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+      crossorigin="anonymous"></script>
     <script>
+      function setCookie(name,value,days) {
+            var expires = "";
+            if (days) {
+                var date = new Date();
+                date.setTime(date.getTime() + (days*24*60*60*1000));
+                expires = "; expires=" + date.toUTCString();
+            }
+            document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+        }
+        function getCookie(name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for(var i=0;i < ca.length;i++) {
+                var c = ca[i];
+                while (c.charAt(0)==' ') c = c.substring(1,c.length);
+                if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+            }
+            return null;
+        }
+        function eraseCookie(name) {   
+            document.cookie = name+'=; Max-Age=-99999999;';  
+        }
+        function acceptGdpr(){
+            setCookie('cookie_notice_accepted','true',7);
+            $('.gdpr').hide();
+        }
+        function rejectGdpr(){
+            setCookie('cookie_notice_accepted','false',7);
+            $('.gdpr').hide();
+        }
+        $(document).ready(function(){
+          var cookie_notice_accepted = getCookie('cookie_notice_accepted');
+          if(cookie_notice_accepted=='false'){
+              $('.gdpr').hide();
+          }else if(cookie_notice_accepted == "true"){
+              $('.gdpr').hide();
+          }else{
+              $('.gdpr').show();
+          }
+        });
+
       WebFont.load({
           google: {
           families: ['Roboto']

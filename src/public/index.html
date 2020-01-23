@@ -42,7 +42,7 @@
     <meta property="og:image" content="https://parasnath.com.np/images/paras-nath-chaudhary.jpg" />
 
 </head>
-<body  >    
+<body  >        
     <div class="container h-card" itemscope itemtype="https://schema.org/Person">
 	<link itemprop="url" href="https://parasnath.com.np/">      
         <nav>            
@@ -67,7 +67,7 @@
                 
             </ul>
         </nav>
-        <main>
+        <main>            
             <section id="about">
                 <img class="u-photo lazyload" data-src="/images/paras.jpg" alt="Paras Nath" title="Paras Nath" itemprop="image" />
                 <h1 itemprop="name" class="p-name"><span class="p-given-name" itemprop="givenName">Paras Nath</span>&nbsp;<span class="p-family-name" itemprop="familyName">Chaudhary</span></h1>
@@ -378,6 +378,13 @@
                 Powered by:&nbsp;<a rel="noopener noreferrer" target="_blank" title="netlify" href="https://www.netlify.com/">netlify</a>&nbsp;and&nbsp;<a rel="noopener noreferrer" target="_blank" title="Cloudflare" href="https://www.cloudflare.com/">Cloudflare</a>
             </p>
             </section>
+            <div class="gdpr hide">
+                We use cookies to ensure that we give you the best experience on our website. If you continue to use this site we will assume that you are happy with it.
+                <br /><br />
+                <a class="btn" href="javascript:acceptGdpr()">Ok</a>
+                <a class="btn" href="javascript:rejectGdpr()">No</a>
+                <a class="btn" href="/blog/privacy-policy/">Privacy Policy</a>
+            </div>
         </main>
         
     </div> 
@@ -391,7 +398,46 @@
         });
         </script>
     <script>
+        function setCookie(name,value,days) {
+            var expires = "";
+            if (days) {
+                var date = new Date();
+                date.setTime(date.getTime() + (days*24*60*60*1000));
+                expires = "; expires=" + date.toUTCString();
+            }
+            document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+        }
+        function getCookie(name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for(var i=0;i < ca.length;i++) {
+                var c = ca[i];
+                while (c.charAt(0)==' ') c = c.substring(1,c.length);
+                if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+            }
+            return null;
+        }
+        function eraseCookie(name) {   
+            document.cookie = name+'=; Max-Age=-99999999;';  
+        }
+        function acceptGdpr(){
+            setCookie('cookie_notice_accepted','true',7);
+            $('.gdpr').hide();
+        }
+        function rejectGdpr(){
+            setCookie('cookie_notice_accepted','false',7);
+            $('.gdpr').hide();
+        }
+
     $(document).ready(function(){
+        var cookie_notice_accepted = getCookie('cookie_notice_accepted');
+        if(cookie_notice_accepted=='false'){
+            $('.gdpr').hide();
+        }else if(cookie_notice_accepted == "true"){
+            $('.gdpr').hide();
+        }else{
+            $('.gdpr').show();
+        }
       // Add smooth scrolling to all links
       $("a").on('click', function(event) {
 
@@ -433,6 +479,7 @@
     }
 
     </script>
+
     <script src="lazysizes.min.js" async=""></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-128290193-1"></script>
