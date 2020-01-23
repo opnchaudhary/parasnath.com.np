@@ -128,6 +128,9 @@ nav ul li a{
 section ul li div{
     padding: 0px;
 }
+#about img {
+    display:none;
+}
 #experiences,#portfolio, #testimonials, #awards-and-certifications, #education, #skills, #services, #publications{
     width: 100%;
 }
@@ -266,6 +269,12 @@ svg{
   }
   main{
     margin: 0px 0px;
+  }
+  #about img {
+    display: unset !important;
+    align-self: center;
+    margin-top: 20px;
+    margin-bottom: -40px;
   }
   .social{
       justify-content: center;
