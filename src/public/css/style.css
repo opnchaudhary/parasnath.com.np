@@ -107,7 +107,7 @@ section:nth-child(even) h2{
     display: block;
     line-height: 1.5;
 }
-nav > img{
+nav > img, .u-photo{
     width: 114px;
     height: 114px;
     border-radius: 50%;
