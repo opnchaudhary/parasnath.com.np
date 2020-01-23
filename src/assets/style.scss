@@ -1147,8 +1147,10 @@ Modules - reusable parts of our design
   bottom: 0;    
   z-index: 5;
   background-color: black;
+  color: white;
   padding: 8px;
   width: 75%;
+  border-radius: 8px 8px 0px 0px;
 }
 .btn{
   background: #0069c0;
