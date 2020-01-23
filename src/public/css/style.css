@@ -270,6 +270,14 @@ svg{
   .social{
       justify-content: center;
   }
+    .social li{
+        margin: 8px !important;
+    }
+    svg{
+    height: 36px;
+    width: 36px;
+    fill: white;
+}
   #promo{
     height: auto;
     width: 114px;
