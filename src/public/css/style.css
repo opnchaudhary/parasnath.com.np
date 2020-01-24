@@ -128,6 +128,9 @@ section ul li div{
 #about img {
     display:none;
 }
+p[itemprop=spouse] {
+    margin-bottom: 20px;
+}
 #experiences,#portfolio, #testimonials, #awards-and-certifications, #education, #skills, #services, #publications{
     width: 100%;
 }
