@@ -321,7 +321,6 @@ svg{
       flex-direction: column;
   }
   #cta a{
-    margin-top: 8px;
     margin-bottom: 0px;
     margin-left: 0px !important;    
   }
