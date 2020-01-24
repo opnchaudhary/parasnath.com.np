@@ -6,9 +6,9 @@ Paras Nath Chaudhary
 This is homepage of Paras Nath Chaudhary hosted at https://parasnath.com.np.
 
 ### WIP 
-* CSP Header in Report Only Mode
+
 
 ### TODO
 * Add CSP header
-* Add GDPR compliance alert
+* ~~Add GDPR compliance alert~~
 * ~~Add privacy policy~~
