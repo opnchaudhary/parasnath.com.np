@@ -1,6 +1,5 @@
 User-Agent: *
 Disallow: /readme.md
-Disallow: /index.amp.html
 Disallow: /BingSiteAuth.xml
 Disallow: /googled70edeef4ee54e94.html
 
