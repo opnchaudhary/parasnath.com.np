@@ -11,6 +11,7 @@ self.addEventListener('install', function(e) {
      return cache.addAll([
        '/',
        '/index.html',
+       '/jquery.min.js',
        '/css/style.css',
        '/images/paras.jpg',
        '/images/paras-nath-chaudhary.jpg',
