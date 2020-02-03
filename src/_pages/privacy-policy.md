@@ -2,6 +2,7 @@
 layout: page
 title: Privacy Policy
 permalink: /privacy-policy/
+description: Privacy Policy of parasnath.com.np
 ---
 
 # Privacy Policy for Paras Nath

@@ -2,6 +2,7 @@
 layout: page
 title: Unsubscribe
 permalink: /unsubscribe/
+description: Unsubscribe from newsletter of Paras Nath's Blog
 sitemap: false
 ---
 <style>

@@ -2,6 +2,7 @@
 layout: page
 title: Search
 permalink: /search/
+description: Search for blog posts in Paras Nath's Blog
 ---
 
 <div id="search-container">

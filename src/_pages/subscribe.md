@@ -2,6 +2,7 @@
 layout: page
 title: Subscribe
 permalink: /subscribe/
+description: Subscribe to newsletter of Paras Nath's Blog
 ---
 <style>
 form{
