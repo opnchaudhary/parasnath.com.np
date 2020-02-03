@@ -7,7 +7,7 @@ categories: [Monthly Review]
 tags: [Review,January]
 keywords: "Review, January"
 ---
-[Philipp Hansch's blog](https://phansch.net/) inspired me to write monthly reviews. I want to take this as an opportunity to take a look back at the month and look forward to the next month so that I can learn from my past and make the future better. I believe it will be a moment for me to reflect on my own activities. 
+[Philipp Hansch's blog](https://phansch.net/) inspired me to write monthly reviews. I want to take this as an opportunity to take a look back at the month and look forward to the next month so that I can learn from my past and make the future better.<!--more--> I believe it will be a moment for me to reflect on my own activities. 
 
 I will write the monthly review by organizing it in three sections. The first section will be 'what went well?' where I will be listing what activities went well the last month. The next section will be 'what could have been improved?'. This is the section where I evaluate the activities I performed and see where I could have done better and what went wrong. It will also be a section to have a takeaway from the month gone. The final section would be 'For next month' where I want to share what I want to achieve in the next month. So, let's get started.
 
