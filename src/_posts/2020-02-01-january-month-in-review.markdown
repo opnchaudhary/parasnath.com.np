@@ -35,7 +35,7 @@ This year started pretty well. January was a month with a ton of excitement. I h
 ## For next month
 For the next month, February, I plan to do the following activities:  
 * Learn about e-mail marketing
-* Learn to use active voice instead of passive voice
+* Learn to use active voice instead of passive voice in my technical writings
 * Attend final exam of Masters in Computer Science (Second Semester)
 
 Keep an eye for the next month's monthly review here.
