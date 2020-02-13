@@ -2,7 +2,7 @@
 layout: post
 title:  "Force install npm in Arch Linux"
 author: Paras Nath Chaudhary
-date:   2020-02-17 08:30:02 +0545
+date:   2020-02-13 08:30:02 +0545
 categories: [Linux]
 tags: [Linux]
 keywords: "Linux"
