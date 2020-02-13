@@ -12,9 +12,9 @@ to Manjaro, which is also an Arch Linux based distro. Recently, I came across a
 problem after I was trying to update the system. Here I will explain the problem 
 that I faced and the solution. 
 <!--more-->
-In the past, whenever I updated the packages and had any issue I was able to use *--force* option. This option used to solve almost all of my problems. The recent version of pacman/yaourt do not have the *--force* option.
+In the past, whenever I updated the packages and had any issue I was able to use *--force* option. This option used to solve almost all of my problems. The recent version of pacman/yaourt does not have the *--force* option.
 
-Today while I was updating **npm** I got into similar situation. The error was as follows:
+Today while I was updating **npm** I got into a similar situation. The error was as follows:
 
 ```txt
 error: failed to commit transaction (conflicting files)
@@ -25,12 +25,12 @@ npm: /usr/lib/node_modules/npm/lib/utils/stringify-package.js exists in filesyst
 Errors occurred, no packages were upgraded.
 ```
 
-I searched the internet for a while then I stumbled upon this [issue](https://github.com/nodesource/distributions/issues/636). It's the solution by [n0noob](https://github.com/n0noob). The solution is to use 
+I searched the internet for a while then I stumbled upon this [issue](https://github.com/nodesource/distributions/issues/636). It is the solution by [n0noob](https://github.com/n0noob). The solution is to use 
 *--overwrite='\*'*.  
 
 So the final command would be 
 > sudo pacman -S npm --overwrite='*'  
 
-And this solved my problem.  
+And this solved my problem.  This applies to Arch Linux and other distros based on Arch Linux.
 
 > Caution: Use --overwrite='*' at your own risk. This command might result in an unusable system. Use it only if you know what you are doing.
