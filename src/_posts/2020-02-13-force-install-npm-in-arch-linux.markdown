@@ -16,7 +16,7 @@ In the past, whenever I updated the packages and had any issue I was able to use
 
 Today while I was updating **npm** I got into a similar situation. The error was as follows:
 
-```txt
+```bash
 error: failed to commit transaction (conflicting files)
 npm: /usr/lib/node_modules/npm/lib/utils/stringify-package.js exists in filesystem
 
