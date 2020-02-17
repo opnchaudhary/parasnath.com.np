@@ -9,7 +9,7 @@ keywords: "SEO"
 ---
 Let me tell you that I am not an SEO expert. These are some of the key learnings 
 while I was optimizing my website for Search Engines.
-
+<!--more-->
 There have been many times when I thought of starting my blog, wrote a few 
 articles and stopped. After a couple of months or a year, the same thing again 
 comes to my mind and I start again. This has been happening for a long time. 
