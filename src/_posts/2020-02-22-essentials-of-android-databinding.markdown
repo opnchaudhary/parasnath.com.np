@@ -3,10 +3,14 @@ layout: post
 title:  "Essentials of Android Databinding"
 author: Paras Nath Chaudhary
 date:   2020-02-22 18:51:02 +0545
-categories: [Android]
-tags: [Android]
-keywords: "Android"
+categories: [Mobile Development]
+tags: [Android, Kotlin]
+keywords: "Android, Kotlin, DataBinding"
 ---
+The Data Binding Library is a support library that allows you to bind UI components in your layouts to data sources in your app using a declarative format rather than programmatically.
+<!--more-->
+TLDR;  Let's just get our hands dirty.
+
 Open your projects app/build.gradle file and add the plugin by adding *apply plugin: 'kotlin-kapt'* just above the line with *android {* as shown below:
 
 ```gradle
