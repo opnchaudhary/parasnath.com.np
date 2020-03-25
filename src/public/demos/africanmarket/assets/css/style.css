@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Kodchasan&display=swap');
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: white;
+    /* font-family: 'Poppins', sans-serif; */
+    /* font-family: 'Raleway', sans-serif; */
+    font-family: 'Kodchasan', sans-serif;
+}
+.container{
+    display:flex;
+    flex-direction: column;
+}
+.container div {
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+    justify-content: center;
+    font-weight: bold;
+    width: 100%;
+    height: 100vh;
+}
+.container div:nth-child(1){
+    background-image: url('/assets/images/bg1.jpg');
+    background-size: cover;
+}
+.container div:nth-child(2){
+    background-color: #8BC34A;
+    overflow: hidden;
+}
+.container div:nth-child(3){
+    height: 460px;
+    background-image: url('/assets/images/bg3.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+.container div:nth-child(3) h2{
+    background-color: rgba(0,0,0,0.7);
+    padding: 60px;
+}
+.download-action-links{
+    list-style: none;
+    display: inline-flex;
+    flex-direction: row;
+}
+.download-action-links img{
+    width: 180px;
+    height: 100px;
+    object-fit: contain;
+}
+footer{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0rem;
+}
+footer ul{
+    display: inline-flex;
+    list-style: none;
+}
+footer ul li{
+    margin: 0px 8px;
+}
+footer ul li a{
+    text-decoration: none;
+}
+#screenshot{
+    position: relative;
+    height: 400px;
+}
+@media only screen and (max-width:600px){
+    
+    .download-action-links{
+        flex-direction: column;
+    }
+    .download-action-links img{
+        margin: -14px 0px;
+    }
+    .container div:nth-child(3){    
+        background-image: url('/assets/images/bg3-mobile.jpg');
+    }
+    .container div:nth-child(3) h2{
+        background-color: rgba(0,0,0,0.7);
+        padding: 24px;
+    }
+    footer ul {
+        display: flex;
+        flex-direction:  column;
+    }
+}
