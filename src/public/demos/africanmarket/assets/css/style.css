@@ -23,7 +23,7 @@
     height: 100vh;
 }
 .container div:nth-child(1){
-    background-image: url('/assets/images/bg1.jpg');
+    background-image: url('../../assets/images/bg1.jpg');
     background-size: cover;
 }
 .container div:nth-child(2){
@@ -32,7 +32,7 @@
 }
 .container div:nth-child(3){
     height: 460px;
-    background-image: url('/assets/images/bg3.jpg');
+    background-image: url('../../assets/images/bg3.jpg');
     background-attachment: fixed;
     background-size: cover;
 }
@@ -81,7 +81,7 @@ footer ul li a{
         margin: -14px 0px;
     }
     .container div:nth-child(3){    
-        background-image: url('/assets/images/bg3-mobile.jpg');
+        background-image: url('../../assets/images/bg3-mobile.jpg');
     }
     .container div:nth-child(3) h2{
         background-color: rgba(0,0,0,0.7);
