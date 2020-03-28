@@ -33,3 +33,8 @@ In Machine A:
 
 In Machine B: 
 * Setup SSH
+
+Now we want to deploy the same website in one more machine (Machine C: 192.168.10.4) then all we need to do is setup SSH in third machine and add it in /etc/ansible/hosts
+[test_server]
+192.168.10.3 ansible_ssh_user=root ansible_ssh_pass=password
+192.168.10.4 ansible_ssh_user=root ansible_ssh_pass=password
