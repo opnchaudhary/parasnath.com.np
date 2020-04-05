@@ -1,4 +1,5 @@
 function getPrograms(){
+    $('#media-menu').hide();
     $.get("/ajax/programs.html", function(data, status){
         $('#main-content').html(data);
     });
@@ -10,6 +11,7 @@ function getPrograms(){
     })
 }
 function getPad(){
+    $('#media-menu').show();
     $.get("./ajax/pad.html", function(data, status){
         $('#main-content').html(data);
     });
@@ -21,6 +23,7 @@ function getPad(){
     })
 }
 function getLive(){
+    $('#media-menu').hide();
     $.get("./ajax/live.html", function(data, status){
         $('#main-content').html(data);
     });

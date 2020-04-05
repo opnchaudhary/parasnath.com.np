@@ -61,6 +61,7 @@ table{
     width: 49%;
 }
 #live-stats{
+    padding: 8px;
     border: 1px solid $green;
     margin-left: 2px;
 }
@@ -68,8 +69,10 @@ table{
     font-size: 14px;
     background: white;
     width: 145px;
-    margin: -12px auto auto auto;
+    margin: -40px auto auto auto;
     padding: 0px 8px;
+    text-align: center;
+    color: $green;
 }
 #logout{
     padding: 4px 8px;
