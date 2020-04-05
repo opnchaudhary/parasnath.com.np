@@ -215,4 +215,26 @@ table {
   list-style: none;
   margin: 4px 0px;
 }
+
+#play-status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#play-status > div {
+  padding: 8px;
+  background-color: #7acc42;
+  color: #424242;
+  margin: 2px 4px;
+  font-size: 42px;
+  font-weight: 900;
+}
 /*# sourceMappingURL=style.css.map */

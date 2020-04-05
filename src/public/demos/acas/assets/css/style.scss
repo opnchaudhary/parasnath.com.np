@@ -159,6 +159,19 @@ table{
     list-style: none;
     margin: 4px 0px;
 }
+#play-status{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#play-status > div{
+    padding: 8px;
+    background-color: $green;
+    color: $black;
+    margin: 2px 4px;
+    font-size: 42px;
+    font-weight: 900;
+}
 // @media only screen and (max-width:600px){
 //    aside{
 //      display: none;
