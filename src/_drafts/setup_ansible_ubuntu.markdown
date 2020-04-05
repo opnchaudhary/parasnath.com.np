@@ -1,3 +1,12 @@
+---
+layout: post
+title:  "Setup ansible in ubuntu"
+author: Paras Nath Chaudhary
+date:   2020-04-10 18:51:02 +0545
+categories: [Linux]
+tags: [Linux, Ansible, DevOps]
+keywords: "Linux, Ansible, DevOps"
+---
 Here we are going to use two machines. 
 Machine A: 192.168.10.2
 Machine B: 192.168.10.3
