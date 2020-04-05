@@ -10,24 +10,24 @@ function getPrograms(){
     })
 }
 function getPad(){
-    $.get("/ajax/pad.html", function(data, status){
+    $.get("./ajax/pad.html", function(data, status){
         $('#main-content').html(data);
     });
-    $.get("/ajax/pad-left-panel.html", function(data, status){
+    $.get("./ajax/pad-left-panel.html", function(data, status){
         $('#left-dynamic-panel').html(data);
     });
-    $.get("/ajax/pad-right-panel.html", function(data, status){
+    $.get("./ajax/pad-right-panel.html", function(data, status){
         $('#right-dynamic-panel').html(data);
     })
 }
 function getLive(){
-    $.get("/ajax/live.html", function(data, status){
+    $.get("./ajax/live.html", function(data, status){
         $('#main-content').html(data);
     });
-    $.get("/ajax/live-left-panel.html", function(data, status){
+    $.get("./ajax/live-left-panel.html", function(data, status){
         $('#left-dynamic-panel').html(data);
     });
-    $.get("/ajax/live-right-panel.html", function(data, status){
+    $.get("./ajax/live-right-panel.html", function(data, status){
         $('#right-dynamic-panel').html(data);
     })
 }

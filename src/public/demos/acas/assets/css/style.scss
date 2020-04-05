@@ -55,6 +55,21 @@ table{
 #live-container{
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+}
+#live-container img,#live-container #live-stats{
+    width: 49%;
+}
+#live-stats{
+    border: 1px solid $green;
+    margin-left: 2px;
+}
+#live-stats h2{
+    font-size: 14px;
+    background: white;
+    width: 145px;
+    margin: -12px auto auto auto;
+    padding: 0px 8px;
 }
 #logout{
     padding: 4px 8px;
@@ -130,6 +145,10 @@ table{
 }
 #share a{
     margin: 2px 2px;
+}
+#playing ul li{
+    list-style: none;
+    margin: 4px 0px;
 }
 // @media only screen and (max-width:600px){
 //    aside{

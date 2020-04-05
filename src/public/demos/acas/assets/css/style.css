@@ -65,6 +65,26 @@ table {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#live-container img, #live-container #live-stats {
+  width: 49%;
+}
+
+#live-stats {
+  border: 1px solid #7acc42;
+  margin-left: 2px;
+}
+
+#live-stats h2 {
+  font-size: 14px;
+  background: white;
+  width: 145px;
+  margin: -12px auto auto auto;
+  padding: 0px 8px;
 }
 
 #logout {
@@ -182,5 +202,10 @@ table {
 
 #share a {
   margin: 2px 2px;
+}
+
+#playing ul li {
+  list-style: none;
+  margin: 4px 0px;
 }
 /*# sourceMappingURL=style.css.map */
