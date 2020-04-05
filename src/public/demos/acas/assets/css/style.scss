@@ -11,6 +11,10 @@ $shadow: #d5d5d5;
     //overflow: scroll;
     margin-top: 48px;
 }
+#main-content table thead{
+    color: $white;
+    background-color: $black;
+}
 #player{
   width: 100%;
 }

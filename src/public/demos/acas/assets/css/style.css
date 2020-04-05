@@ -7,6 +7,11 @@
   margin-top: 48px;
 }
 
+#main-content table thead {
+  color: #fafafa;
+  background-color: #424242;
+}
+
 #player {
   width: 100%;
 }
