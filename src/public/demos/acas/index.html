@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="container-fluid">
+      <div class="row">
+    <aside id="left-panel" class="d-none d-lg-block col-lg-3">
+        <a href="javascript:void(0)" id="close-left-panel">&times;</a>
+      <div>
+        <img id="player" src="assets/images/player.png" alt="Player">
+      </div>
+      <div class="btn-group btn-group-toggle mt-2" data-toggle="buttons">
+        <label id="programs-menu" class="btn btn-outline-success active">
+          <input type="radio" name="options" id="option1" checked> <i class="fas fa-clock"></i> Programs
+        </label>
+        <label id="pad-menu"  class="btn btn-outline-success">
+          <input type="radio" name="options" id="option2"> <i class="fas fa-film"></i> Pad
+        </label>
+        <label id="live-menu" class="btn btn-outline-success">
+          <input type="radio" name="options" id="option3"> <i class="fas fa-broadcast-tower"></i> Live
+        </label>
+      </div>
+
+      <div id="left-dynamic-panel">
+
+      </div>
+    </aside>
+    <main class="col-lg-6">
+      <button id="open-left-panel" class="block d-lg-none d-xl-none" >&#9776; Left Menu</button>
+      <button id="open-right-panel" class="block d-lg-none d-xl-none">&#9776; Right Menu</button>
+      <div id="media-menu">
+        <a class="btn btn-outline-success" href="#"><i class="fas fa-plus-circle"></i> Add Media</a>
+        <a class="btn btn-outline-success" href="#"><i class="fas fa-copy"></i> Duplicate</a>
+        <a class="btn btn-outline-success" href="#"><i class="fas fa-trash"></i> Delete</a>
+        <a class="btn btn-outline-success" href="#"><i class="fas fa-video"></i> Live Studio</a>
+        <div class="search input-group flex-nowrap mt-2">
+            <input type="text" class="form-control" placeholder="Search" aria-label="Username" aria-describedby="addon-wrapping">
+            <div class="input-group-append">
+                <span class="input-group-text" id="addon-wrapping"><i class="fas fa-search"></i></span>
+              </div>
+          </div>
+
+      </div>
+      <div id="main-content" class="mt-4"></div>
+      <div>
+          <h2>Playing</h2>
+          <ul>
+              <li>
+                [2020-03-22 14:03:34,659] [INFO] play at "14:00:43" Kung Fu - Art Martiaux episode 32
+              </li>
+              <li>
+                [2020-03-22 14:03:34,659] [INFO] play at "14:00:43" Kung Fu - Art Martiaux episode 33
+              </li>
+              <li>
+                [2020-03-22 14:03:34,659] [INFO] play at "14:00:43" Kung Fu - Art Martiaux episode 34
+              </li>
+              <li>
+                [2020-03-22 14:03:34,659] [INFO] play at "14:00:43" Kung Fu - Art Martiaux episode 35
+              </li>
+              <li>
+                [2020-03-22 14:03:34,659] [INFO] play at "14:00:43" Kung Fu - Art Martiaux episode 36
+              </li>
+              <li>
+                [2020-03-22 14:03:34,659] [INFO] play at "14:00:43" Kung Fu - Art Martiaux episode 37
+              </li>
+          </ul>
+      </div>
+    </main>
+    <aside id="right-panel" class="d-none d-lg-block d-xl-block col-lg-3">
+        <a href="javascript:void(0)" id="close-right-panel" >&times;</a><br>
+        <a class="btn btn-outline-success" id="logout" title="Logout" href="#">
+            <i class="fas fa-sign-out-alt"></i>
+        </a>
+      <div id="side-poster">
+        <img id="side-banner" src="assets/images/poster.jpg" alt="Banner">
+        <h2>Youssou ndour au bercy</h2>
+      </div>
+      <ul id="social-links">
+        <li>
+          <a href="#"><img src="assets/images/facebook.png" alt="Facebook"></a>
+        </li>
+        <li>
+          <a href="#"><img src="assets/images/twitter.png" alt="Twitter"></a>
+        </li>
+        <li>
+          <a href="#"><img src="assets/images/youtube.png" alt="YouTube"></a>
+        </li>
+      </ul>
+      <div id="share">
+        <h2>Publish / Share</h2>
+        <a class="btn btn-success" href="#">EMBED CODE</a>
+        <a class="btn btn-success" href="#">FACEBOOK</a>
+        <a class="btn btn-success" href="#">EMAIL</a>
+      </div>
+
+    </aside>
+    </div>
+    </div>
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

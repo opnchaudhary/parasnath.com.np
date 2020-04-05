@@ -1,0 +1,126 @@
+$green: #7acc42;
+$white: #fafafa;
+$black: #424242;
+$red: #f44336;
+$shadow: #d5d5d5;
+*{
+  margin: 0;
+  padding: 0;
+}
+#main-content{
+    //overflow: scroll;
+}
+#player{
+  width: 100%;
+}
+.thumbnail{
+  width: 120px;
+}
+#side-banner{
+    width: 100%;
+}
+#media-menu{
+    display:ruby;
+}
+#media-menu .btn{
+   border-radius: 20px;
+   margin: 4px;
+}
+table{
+  border-spacing: 0 2px;
+  border-collapse: collapse;
+}
+.active, .active.svg path{
+    fill: $white;
+  color: $white;
+  background-color: $green;
+}
+.search{
+    width: 240px;
+}
+.search input{
+    border-radius: 20px;
+}
+.search #addon-wrapping{
+    background-color: $black;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.search .fa-search{
+    color: $green;
+}
+#live-container{
+  display: flex;
+  flex-direction: row;
+}
+#logout{
+    padding: 4px 8px;
+    border-radius: 20px;
+}
+#side-poster{
+    margin-top: 10px;
+}
+#social-links{
+    list-style: none;
+}
+#social-links li{
+    margin: 2px 0px;
+}
+#accordionExample .btn{
+  padding: 0px;
+  color: $black;
+}
+#accordionExample ul{
+    list-style: none;
+}
+#accordionExample ul li a, #accordionExample .btn-link{
+    text-decoration: none;
+}
+.fa-xs{
+    font-size: 1rem;
+}
+#accordionExample h2{
+    box-shadow: 2px 1px 2px $shadow;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px;
+}
+#accordionExample h2 button{
+    font-weight: 900;
+}
+.svg{
+    width: 24px;
+    height: 24px;
+}
+#accordionExample ul li{
+    margin-top: 4px;
+    box-shadow: 2px 1px 2px $shadow;
+    padding: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#accordionExample ul li a {
+    color: $black;
+}
+#accordionExample ul li:hover, #accordionExample ul li:hover a,#accordionExample ul li:hover .fas{
+    background-color: $green;
+    color: $white;
+}
+#accordionExample ul li .fas{
+    color: $green;
+}
+#share{
+    display: flex;
+    flex-direction: column;
+}
+#share a{
+    margin: 2px 2px;
+}
+@media only screen and (max-width:600px){
+   aside{
+     display: none;
+   }
+ }
