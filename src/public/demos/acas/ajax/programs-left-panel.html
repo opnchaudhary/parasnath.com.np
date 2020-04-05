@@ -1,0 +1,36 @@
+<style>
+    .ui-datepicker,
+.ui-datepicker table,
+.ui-datepicker tr,
+.ui-datepicker td,
+.ui-datepicker th {
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-spacing: 0;
+}
+</style>
+<div class="accordion mt-4" id="accordionExample">
+    <h2 class="mb-0">
+      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Animation
+      </button>
+      <i class="fas fa-sort-down fa-xs"></i>
+    </h2>
+    <div id="collapseOne" class="collapse show" data-parent="#accordionExample">
+        <div id="calendar">
+            here is the calendar
+        </div>
+    </div>
+</div>
+
+
+<script src="assets/js/jquery-ui-datepicker.min.js"></script>
+<script>
+    $('#calendar').datepicker({
+        inline: true,
+        firstDay: 1,
+        showOtherMonths: true,
+        dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+    });
+</script>

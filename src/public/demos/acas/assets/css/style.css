@@ -15,6 +15,10 @@
   width: 100%;
 }
 
+#tab-menu {
+  width: 100%;
+}
+
 #media-menu {
   display: ruby;
 }
@@ -74,10 +78,21 @@ table {
 
 #social-links {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #social-links li {
   margin: 2px 0px;
+}
+
+#social-links li a img {
+  width: 100%;
 }
 
 #accordionExample .btn {
@@ -121,7 +136,7 @@ table {
   height: 24px;
 }
 
-#accordionExample ul li {
+#accordionExample ul li, #left-dynamic-panel ul li {
   margin-top: 4px;
   -webkit-box-shadow: 2px 1px 2px #d5d5d5;
           box-shadow: 2px 1px 2px #d5d5d5;
@@ -141,7 +156,12 @@ table {
   color: #424242;
 }
 
-#accordionExample ul li:hover, #accordionExample ul li:hover a, #accordionExample ul li:hover .fas {
+#left-dynamic-panel ul li a {
+  text-decoration: none;
+}
+
+#accordionExample ul li:hover, #accordionExample ul li:hover a, #accordionExample ul li:hover .fas,
+#left-dynamic-panel li:hover {
   background-color: #7acc42;
   color: #fafafa;
 }
@@ -162,11 +182,5 @@ table {
 
 #share a {
   margin: 2px 2px;
-}
-
-@media only screen and (max-width: 600px) {
-  aside {
-    display: none;
-  }
 }
 /*# sourceMappingURL=style.css.map */

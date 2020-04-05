@@ -19,6 +19,9 @@ $shadow: #d5d5d5;
 #side-banner{
     width: 100%;
 }
+#tab-menu{
+    width: 100%;
+}
 #media-menu{
     display:ruby;
 }
@@ -62,9 +65,14 @@ table{
 }
 #social-links{
     list-style: none;
+    display: flex;
+    flex-direction: column;
 }
 #social-links li{
     margin: 2px 0px;
+}
+#social-links li a img{
+    width: 100%;
 }
 #accordionExample .btn{
   padding: 0px;
@@ -93,7 +101,7 @@ table{
     width: 24px;
     height: 24px;
 }
-#accordionExample ul li{
+#accordionExample ul li, #left-dynamic-panel ul li{
     margin-top: 4px;
     box-shadow: 2px 1px 2px $shadow;
     padding: 4px;
@@ -102,10 +110,14 @@ table{
     align-items: center;
 
 }
-#accordionExample ul li a {
+#accordionExample ul li a{
     color: $black;
 }
-#accordionExample ul li:hover, #accordionExample ul li:hover a,#accordionExample ul li:hover .fas{
+#left-dynamic-panel ul li a{
+    text-decoration: none;
+}
+#accordionExample ul li:hover, #accordionExample ul li:hover a,#accordionExample ul li:hover .fas,
+#left-dynamic-panel li:hover{
     background-color: $green;
     color: $white;
 }
@@ -119,8 +131,8 @@ table{
 #share a{
     margin: 2px 2px;
 }
-@media only screen and (max-width:600px){
-   aside{
-     display: none;
-   }
- }
+// @media only screen and (max-width:600px){
+//    aside{
+//      display: none;
+//    }
+//  }
