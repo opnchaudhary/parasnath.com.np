@@ -1,12 +1,12 @@
 function getPrograms(){
     $('#media-menu').hide();
-    $.get("/ajax/programs.html", function(data, status){
+    $.get("./ajax/programs.html", function(data, status){
         $('#main-content').html(data);
     });
-    $.get("/ajax/programs-left-panel.html", function(data, status){
+    $.get("./ajax/programs-left-panel.html", function(data, status){
         $('#left-dynamic-panel').html(data);
     });
-    $.get("/ajax/programs-right-panel.html", function(data, status){
+    $.get("./ajax/programs-right-panel.html", function(data, status){
         $('#right-dynamic-panel').html(data);
     })
 }
