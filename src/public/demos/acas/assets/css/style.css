@@ -38,10 +38,10 @@ table {
   border-collapse: collapse;
 }
 
-.active, .active.svg path {
+.active, .active.svg path, table tr.active td {
   fill: #fafafa;
   color: #fafafa;
-  background-color: #7acc42;
+  background-color: #7acc42 !important;
 }
 
 .search {
