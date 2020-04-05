@@ -176,8 +176,16 @@ table {
   text-decoration: none;
 }
 
+#left-dynamic-panel li {
+  color: #7acc42;
+}
+
+#left-dynamic-panel li a {
+  color: #424242;
+}
+
 #accordionExample ul li:hover, #accordionExample ul li:hover a, #accordionExample ul li:hover .fas,
-#left-dynamic-panel li:hover {
+#left-dynamic-panel li:hover, #left-dynamic-panel li:hover a {
   background-color: #7acc42;
   color: #fafafa;
 }
