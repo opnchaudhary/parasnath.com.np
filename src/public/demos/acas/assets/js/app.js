@@ -59,16 +59,22 @@ $(document).ready(function(){
         console.log('open right panel');
         var rightPanel = $("#right-panel");
         rightPanel.removeClass('d-none');
+        rightPanel.css('position', 'absolute');
+        rightPanel.css('right','0');
+        rightPanel.css('width', '200px');
+        $('#main').css('margin-right', '200px');
     });
     $('#close-left-panel').click(function(){
         $('#left-panel').addClass('d-none');
-        $('#left-panel').addClass('d-lg-block');
         $('#left-panel').css('position','unset');
         $('#left-panel').css('width','0px');
         $('#main').css('margin-left','0px');
     });
     $('#close-right-panel').click(function(){
         $('#right-panel').addClass('d-none');
+        $('#right-panel').css('position','unset');
+        $('#right-panel').css('width','0px');
+        $('#main').css('margin-right', '0px');
     });
 
 
