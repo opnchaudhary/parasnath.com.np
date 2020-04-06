@@ -248,8 +248,9 @@ table {
   background-color: #7acc42;
   color: #424242;
   margin: 2px 4px;
-  font-size: 42px;
+  font-size: 34px;
   font-weight: 900;
+  text-align: center;
 }
 
 #overlay {
@@ -265,6 +266,28 @@ table {
 #overlay > img {
   margin: 2px 0px;
   height: 48px;
+}
+
+#playing-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#playing-menu li {
+  color: #fafafa;
+  padding: 8px;
+  background-color: #7acc42;
+  border-radius: 0px 25px 0px 0px;
+}
+
+#playing-menu li.active {
+  color: #424242;
+  background-color: #fafafa !important;
 }
 
 #accordionExample .month li, #accordionExample ul.days li, #accordionExample ul.weekdays li {

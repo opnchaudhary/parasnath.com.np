@@ -63,6 +63,7 @@ $(document).ready(function(){
         rightPanel.css('right','0');
         rightPanel.css('width', '200px');
         $('#main').css('margin-right', '200px');
+        $('#main').css('margin-left', '-200px');
     });
     $('#close-left-panel').click(function(){
         $('#left-panel').addClass('d-none');
@@ -75,6 +76,7 @@ $(document).ready(function(){
         $('#right-panel').css('position','unset');
         $('#right-panel').css('width','0px');
         $('#main').css('margin-right', '0px');
+        $('#main').css('margin-left', '0px');
     });
 
 

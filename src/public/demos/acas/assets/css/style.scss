@@ -179,8 +179,9 @@ table{
     background-color: $green;
     color: $black;
     margin: 2px 4px;
-    font-size: 42px;
+    font-size: 34px;
     font-weight: 900;
+    text-align: center;
 }
 #overlay{
     display: flex;
@@ -189,6 +190,20 @@ table{
 #overlay > img{
     margin: 2px 0px;
     height: 48px;
+}
+#playing-menu{
+  display: flex;
+  flex-direction: row;
+}
+#playing-menu li{
+    color: $white;
+    padding: 8px;
+    background-color: $green;
+    border-radius: 0px 25px 0px 0px;
+}
+#playing-menu li.active{
+    color: $black;
+    background-color: $white !important;
 }
 // @media only screen and (max-width:600px){
 //    aside{
