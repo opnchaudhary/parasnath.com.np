@@ -47,9 +47,13 @@ $(document).ready(function(){
     });
 
     $('#open-left-panel').click(function() {
-        console.log('open left panel');
+        // console.log('open left panel');
         var leftPanel = $("#left-panel");
         leftPanel.removeClass('d-none');
+        leftPanel.css('position','absolute');
+        leftPanel.css('width','200px');
+        $('#main').css('margin-left','200px');
+
     });
     $('#open-right-panel').click(function() {
         console.log('open right panel');
@@ -58,6 +62,10 @@ $(document).ready(function(){
     });
     $('#close-left-panel').click(function(){
         $('#left-panel').addClass('d-none');
+        $('#left-panel').addClass('d-lg-block');
+        $('#left-panel').css('position','unset');
+        $('#left-panel').css('width','0px');
+        $('#main').css('margin-left','0px');
     });
     $('#close-right-panel').click(function(){
         $('#right-panel').addClass('d-none');
