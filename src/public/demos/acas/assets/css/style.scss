@@ -13,7 +13,7 @@ h2{
 }
 #main-content{
     //overflow: scroll;
-    margin-top: 48px;
+    margin-top: 12px;
 }
 #main-content table thead{
     color: $white;
@@ -68,6 +68,7 @@ table{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-top: 42px;
 }
 #live-container img,#live-container #live-stats{
     width: 49%;
@@ -172,14 +173,13 @@ table{
 #play-status{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
 }
 #play-status > div{
     padding: 8px;
     background-color: $green;
     color: $black;
     margin: 2px 4px;
-    font-size: 34px;
+    font-size: 28px;
     font-weight: 900;
     text-align: center;
 }
