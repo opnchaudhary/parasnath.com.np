@@ -46,8 +46,23 @@ $(document).ready(function(){
         getLive();
     });
 
+    function closeLeftPanel(){
+        $('#left-panel').addClass('d-none');
+        $('#left-panel').css('position','unset');
+        $('#left-panel').css('width','0px');
+        $('#main').css('margin-left','0px');
+    }
+    function closeRightPanel(){
+        $('#right-panel').addClass('d-none');
+        $('#right-panel').css('position','unset');
+        $('#right-panel').css('width','0px');
+        $('#main').css('margin-right', '0px');
+        $('#main').css('margin-left', '0px');
+    }
+
     $('#open-left-panel').click(function() {
         // console.log('open left panel');
+        closeRightPanel();
         var leftPanel = $("#left-panel");
         leftPanel.removeClass('d-none');
         leftPanel.css('position','absolute');
@@ -56,6 +71,7 @@ $(document).ready(function(){
 
     });
     $('#open-right-panel').click(function() {
+        closeLeftPanel();
         console.log('open right panel');
         var rightPanel = $("#right-panel");
         rightPanel.removeClass('d-none');
@@ -63,20 +79,13 @@ $(document).ready(function(){
         rightPanel.css('right','0');
         rightPanel.css('width', '200px');
         $('#main').css('margin-right', '200px');
-        $('#main').css('margin-left', '-200px');
+        $('#main').css('margin-left', '-340px');
     });
     $('#close-left-panel').click(function(){
-        $('#left-panel').addClass('d-none');
-        $('#left-panel').css('position','unset');
-        $('#left-panel').css('width','0px');
-        $('#main').css('margin-left','0px');
+       closeLeftPanel();
     });
     $('#close-right-panel').click(function(){
-        $('#right-panel').addClass('d-none');
-        $('#right-panel').css('position','unset');
-        $('#right-panel').css('width','0px');
-        $('#main').css('margin-right', '0px');
-        $('#main').css('margin-left', '0px');
+       closeRightPanel();
     });
 
 

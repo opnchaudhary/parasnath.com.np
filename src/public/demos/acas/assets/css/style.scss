@@ -205,11 +205,19 @@ table{
     color: $black;
     background-color: $white !important;
 }
-// @media only screen and (max-width:600px){
+#close-left-panel, #close-right-panel{
+    text-decoration: none;
+    font-size: 42px;
+}
+ @media only screen and (max-width:600px){
 //    aside{
 //      display: none;
 //    }
-//  }
+#tab-menu{
+    display: flex;
+    flex-direction: column;
+}
+  }
 
 #accordionExample .month li, #accordionExample ul.days li,#accordionExample ul.weekdays li{
     box-shadow: none;
