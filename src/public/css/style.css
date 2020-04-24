@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     color: white;
 }
@@ -24,7 +25,7 @@ h1, h2{
 }
 nav{
     height: 120vh;
-    width:160px;
+    width:200px;
     position: fixed;
     background: #0069c0;
     display: flex;
@@ -35,8 +36,7 @@ nav{
     text-align: center;
 }
 main{
-    margin-left: 160px;    
-    /*text-align: center;*/
+    margin-left: 200px;    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -166,10 +166,13 @@ p[itemprop=spouse] {
     margin-top: 0;
 }
 #what-i-do{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    /* display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-between; */
 }
 .service{
     display: flex;
@@ -179,7 +182,6 @@ p[itemprop=spouse] {
     border-radius: 8px;    
     background-color: #1da1f2;
     padding: 8px;
-    max-width: 44%;
 }
 .service h3, .service p{
     color: white !important;
@@ -201,8 +203,8 @@ p[itemprop=spouse] {
     flex-direction: row;
 }
 svg{
-    height: 24px;
-    width: 24px;
+    height: 2.5rem;
+    width: 2.5rem;
     fill: white;
 }
 .twitter:hover svg{
@@ -327,8 +329,24 @@ svg{
     margin-bottom: 0px;
     margin-left: 0px !important;    
   }
-  .service{
-      max-width: 100%;
+  #what-i-do{
+      display: flex;
+      flex-direction: column;
   }
 }
 
+/* #testimonials p::before{
+    content: open-quote;
+    margin-top: -2rem;
+    font-size: 1.5rem;
+}
+#testimonials p::after{
+    content: close-quote;
+    font-size: 1.5rem;
+}
+#testimonials span::before{
+    content: '~ '
+} */
+#testimonials span{
+    padding: 0 32px;
+}
