@@ -11,9 +11,9 @@
             "quality": "HD",
             "videoType": "HLS"
         },
-        "language":{  
+        "language":  
           "en"
-      },
+          ,
       "thumbnail":"https://parasnath.com.np/demos/celebrityscene/appicon.png",
       "brandedThumbnail":"https://parasnath.com.np/demos/celebrityscene/appicon.png",
       "shortDescription":"",
@@ -25,5 +25,5 @@
       ]
   }
 ],
-    
+
 }
