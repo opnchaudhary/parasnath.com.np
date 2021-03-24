@@ -1,0 +1,37 @@
+{
+    "providerName":"Celebrity Scene",
+    "language":"en-US",
+    "lastUpdated":"2020-03-15T02:01:00+02:00",
+    "liveFeeds":[
+        {
+            "longDescription":"Celebrity Scene TV features up-to-date coverage of celebrity news, interviews, fashion, lifestyle, entertainment gossip, and more. Don’t miss your favorite celebrities and get all the details on what they’re up to, where they’ll be and what they’ll be doing next!",
+            "thumbnail":"https://image.roku.com/ZHZscHItMTc2/streaming-overview.jpg",
+            "releaseDate":"2021-03-24",            
+            "tags":[
+				"linear",
+				"news",
+				"celebrity",
+                "celebrity scene",
+                "live"
+            ],
+            "language":{  
+				  "en"
+			   },
+            "id":"celebrity-scene",
+            "shortDescription":"Celebrity Scene TV features up-to-date coverage of celebrity news, interviews, fashion, lifestyle, entertainment gossip, and more.",
+            "title":"Celebrity Scene",
+            "content":{
+                "duration":100,
+                "videos":[
+                    {
+                        "videoType":"MP4",
+                        "url":"http://parasnath.com.np/celebrity-scene/playlist.m3u8",
+                        "quality":"HD"
+                    }
+                ],
+                "language":"en-us",
+                "dateAdded":"2021-03-24T02:39:11Z"
+            }
+        },  
+    ],
+}
