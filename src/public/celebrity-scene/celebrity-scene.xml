@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<partnerContent>
+	<liveFeeds>
+		<liveFeed id="celebrity-scene">
+			<titles>
+			<title language="en">Celebrity Scene</title>
+		  </titles>
+		  <images>
+			<!--Image Dimensions must be 240x360. If language is not provided, en is used.-->
+			<image language="en" category="Poster Art" width="240" height="360">
+			  <url>https://parasnath.com.np/celebrity-scene/celebrity-scene.png</url>
+			</image>
+		  </images>
+		  <descriptions>		
+			<description language="en" length="60">
+			  Celebrity Scene TV features up-to-date coverage of celebrity news, interviews, fashion, lifestyle, entertainment gossip, and more.
+			</description>
+		  </descriptions>	
+		  <runTime>3600</runTime>	 
+		</liveFeed>
+	</liveFeeds>
+</partnerContent>
