@@ -6,7 +6,7 @@ Paras Nath Chaudhary
 This is homepage of Paras Nath Chaudhary hosted at https://parasnath.com.np.
 
 ### WIP 
-
+  * write posts for the blog
 
 ### TODO
 * Add CSP header
